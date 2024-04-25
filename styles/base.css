@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #28D90D;
+    --secondary-color: #000;
+    --accent1-color: #ADF2A2;
+    --accent2-color: #fff;
+  
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Cabin", sans-serif;
+  
+    --nav-background-color: #0D4B58;
+    --nav-link-color: #A3DCED;
+    --nav-hover-link-color: #0D4B58;
+    --nav-hover-background-color: #a3dced;
+}
+
+body {
+    max-width: 1000px;
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+
+header {
+    background-color: blue;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
