@@ -92,16 +92,13 @@ nav {
 .card {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
 }
 
 hr {
     border-top: 2px solid var(--accent1-color);
-}
-
-.card {
-    margin-top: 1rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
 }
 
 .card h3 {
