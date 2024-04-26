@@ -7,13 +7,12 @@
     <title>Matthew Schmitt | WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development Matthew Schmitt course assignment portal">
     <meta name="author" content="Matthew Schmitt">
-    <link rel="icon" href="filename.ico" />
     <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
     <header>
-        <img src="images/profile.jpg">
+        <img src="images/profile.jpg" alt="Profile picture of Matthew Schmitt">
         <h1>Matthew Schmitt</h1>
     </header>
     <nav>
@@ -25,6 +24,7 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
+        <hr class="separator">
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -42,15 +42,15 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-            <p>Weather information</p>
-            <p>Number of visits</p>
+            <p>Salt Lake City, Utah</p>
+            <p>Page Visits: 44</p>
         </section>
     </main>
     <footer>
-        <p>&copy;2024 | Matthew Schmitt | United States</p>
-        <p id="lastModified"></p>
+        <p>&copy;<span id="currentYear"></span> | Matthew Schmitt | United States</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/"></script>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
