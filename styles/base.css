@@ -53,6 +53,7 @@ img {
     display: block;
     margin: auto;
     max-width: 125px;
+    border-radius: 50%;
 }
 
 nav {
@@ -76,6 +77,8 @@ nav {
  main {
     max-width: 600px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
  }
  main h2 {
     padding: 2rem 0 0.3rem 0;
@@ -90,8 +93,6 @@ nav {
  }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-top: 1rem;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
