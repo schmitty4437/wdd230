@@ -9,7 +9,7 @@
         column-gap: 2rem;
     }
 
-    main h2, hr  {
+    main h2, .separator  {
         grid-column: 1 / 13;
     }
 

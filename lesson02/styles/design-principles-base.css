@@ -86,15 +86,11 @@ nav {
     border-radius: 10px;
 }
 
-p {
-    margin: 0 2rem;
-}
-
 .card img {
     max-width: 100%;
 }
 
-hr {
+.separator {
     border-top: 2px solid var(--accent1-color);
 }
 
@@ -110,15 +106,8 @@ h4 {
     padding-top: 2rem;
 }
 
-.card ul {
-    padding: 1rem;
-}
-
-.card ul li {
-    list-style-type: none;
-}
-
 .card p {
     padding: 1rem 0 1rem 0;
     text-align: center;
+    margin: 0 2rem;
 }
