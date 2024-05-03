@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: var(--primary-color);
     display: grid;
-    grid-template-columns: 1fr;
     padding: 35px 0;
     text-align: center;
 }
@@ -66,7 +65,6 @@ nav {
     max-width: 600px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
  }
  main h2 {
     padding: 2rem 0 0.3rem 0;
