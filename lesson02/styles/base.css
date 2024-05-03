@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #10CC4A;
+    --secondary-color: #000;
+    --accent1-color: #60FF91;
+    --accent2-color: #fff;
+  
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Cabin", sans-serif;
+  
+    --nav-background-color: #000;
+    --nav-link-color: #60FF91;
+    --nav-hover-link-color: #60FF91;
+    --nav-hover-background-color: #10CC4A;
+}
+
+body {
+    max-width: 700px;
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 35px 0;
+    text-align: center;
+}
+
+header h1 {
+    align-self: center;
+    padding-left: 0;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+}
+
+ nav a {
+    display: block;
+    text-align: center;
+    padding: .7rem;
+    color: var(--nav-hover-background-color);
+    text-decoration: none;
+    font-size: 1.5em;
+ }
+
+ nav a:hover {
+    color: var(--nav-link-color);
+ }
+
+ main {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+ main h2 {
+    padding: 2rem 0 0.3rem 0;
+    text-align: center;
+ }
+
+ footer {
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+    background-color: var(--primary-color);
+    text-align: center;
+ }
+
+.card {
+    margin-top: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+p {
+    margin: 0 2rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+hr {
+    border-top: 2px solid var(--accent1-color);
+}
+
+.card h3 {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 10px 10px 0 0;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.card ul {
+    padding: 1rem;
+}
+
+.card ul li {
+    list-style-type: none;
+}
+
+.card p {
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}

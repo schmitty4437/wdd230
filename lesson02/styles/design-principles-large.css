@@ -1,0 +1,27 @@
+@media  screen and (min-width: 1200px) {
+    body {
+        max-width: 70%;
+    }
+
+    main {
+        max-width: 90%;
+        grid-template-columns: repeat(12,1fr);
+        column-gap: 2rem;
+    }
+
+    main h2, hr  {
+        grid-column: 1 / 13;
+    }
+
+    #card-hicks {
+        grid-column: 1 / 5;
+    }
+
+    #card-white-space {
+        grid-column: 5/9;
+    }
+
+    #card-repetition {
+        grid-column: 9/13;
+    }
+}
