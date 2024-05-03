@@ -57,7 +57,7 @@ nav {
     font-size: 1.5em;
  }
 
- nav a:hover, .card a:hover {
+ nav a:hover {
     color: var(--nav-link-color);
  }
 
@@ -85,7 +85,7 @@ nav {
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .separator {
@@ -114,4 +114,9 @@ h4 {
     text-decoration: none;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+.card a:hover {
+    color: var(--secondary-color);
+    opacity: .8;
 }
