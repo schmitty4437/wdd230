@@ -55,12 +55,13 @@ img {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
     background-color: var(--nav-background-color);
     padding: 1rem;
 }
 
  nav a {
-    display: block;
     text-align: center;
     padding: .7rem;
     color: var(--nav-hover-background-color);
