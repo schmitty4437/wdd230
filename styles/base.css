@@ -143,15 +143,7 @@ hr {
     text-align: center;
 }
 
-/* #card-map {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-    margin-top: 2rem;
-} */
-
 #card-map iframe {
     width: 100%;
-    justify-self: center;
     margin-top: 1.5rem;
 }
