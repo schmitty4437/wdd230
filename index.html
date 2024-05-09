@@ -14,6 +14,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,9 @@
     <header>
         <img src="images/profile.jpg" alt="Profile picture of Matthew Schmitt">
         <h1>Matthew Schmitt</h1>
+        <button id="menu"></button>
     </header>
-    <nav>
+    <nav class="navigation">
         <a href="#">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
@@ -45,7 +47,9 @@
                         href="https://codepen.io/Matthew-Schmitt/pen/oNOJvLp" target="_blank">JS Pen</a></li>
                 <li>02: <a href="lesson02/design.html" target="_blank">Media Query</a> | <a
                         href="lesson02/design-principles.html">Design Principles</a></li>
-                <li>03: <a href="">Assignment 3</a> </li>
+                <li>03: <a href="lesson03/images/css-combinators-exercises.jpg" target="_blank">CSS Combinators</a> | <a
+                        href="https://codepen.io/Matthew-Schmitt/pen/MWRNoBd" target="_blank">Responsive Menu</a>
+                </li>
                 <li>04: <a href="">Assignment 4</a> </li>
                 <li>05: <a href="">Assignment 5</a> </li>
                 <li>06: <a href="">Assignment 6</a> </li>
@@ -60,12 +64,19 @@
             <p>Salt Lake City, Utah</p>
             <p>Page Visits: 44</p>
         </section>
+        <section id="card-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97353.06806857316!2d-112.0037605!3d40.313868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d796f771b5103%3A0xbd43fbe76b5b8553!2sEagle%20Mountain%2C%20UT!5e0!3m2!1sen!2sus!4v1715022114156!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> | Matthew Schmitt | Utah, United States</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
 </body>
 
 </html>
