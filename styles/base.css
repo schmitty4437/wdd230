@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: var(--primary-color);
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 3fr 1fr;
     padding: 35px 0;
 }
 
@@ -52,15 +52,6 @@ img {
     margin: auto;
     max-width: 125px;
     border-radius: 50%;
-}
-
-#menu {
-    font-size: 2rem;
-    border: 0;
-    background: none;
-    color: var(--secondary-color);
-    position: absolute;
-    right: 2rem;
 }
 
 #menu::before {
@@ -84,7 +75,7 @@ nav {
     padding: .7rem;
     color: var(--nav-hover-background-color);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
  }
 
  nav a:hover {
