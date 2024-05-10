@@ -82,6 +82,11 @@ nav {
     color: var(--nav-link-color);
  }
 
+ nav .active {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--nav-link-color);
+ }
+
  .open a {
     display: block;
  }

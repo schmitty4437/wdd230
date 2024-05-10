@@ -44,6 +44,10 @@
         grid-column: 1 / 4;
     }
 
+    hr {
+        margin-top: 1vw;
+    }
+
     #card-activities {
         grid-column: 1 / 3;
     }

@@ -28,4 +28,10 @@
         bottom: 8rem;
         left: 22rem;
     }
+
+    .active {
+        margin: auto;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
+     }
 }
