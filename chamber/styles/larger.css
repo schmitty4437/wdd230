@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #254559;
+    --secondary-color: #89CAD9;
+    --accent1-color: #F2EBDC;
+    --accent2-color: #F29849;
+    --accent3-color: #F26A4B;
+  
+    --heading-font: "Forum", serif;
+    --paragraph-font: "Poppins", sans-serif;
+  
+    --nav-background-color: #F2EBDC;
+    --nav-link-color: #254559;
+    --nav-hover-link-color: #89CAD9;
+}
+
+@media  screen and (min-width: 769px) {
+    #menu, #mobile-nav, #logo-mobile {
+        display: none;
+    }
+
+    /* header {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        justify-items: space-between;
+    } */
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    nav a {
+        display: flex;
+        color: var(--nav-link-color);
+        font-size: clamp(14px, 6vw, 18px);
+    }
+
+    #larger-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 2rem;
+    }
+
+    #events p {
+        grid-column: 7/12;
+        grid-row: 2;
+        align-self: center;
+    }
+
+    #events h2 {
+        grid-row: 1;
+        grid-column: 1/13;
+        padding-bottom: 2rem;
+    }
+
+    #events a {
+        grid-column: 7/12;
+        justify-self: center;
+    }
+    
+    #events picture {
+        grid-column: 2/7;
+    }
+}
