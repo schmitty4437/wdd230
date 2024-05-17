@@ -62,6 +62,9 @@ header {
 #mobile-nav {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
 }
 
 #menu::before {
@@ -74,6 +77,9 @@ header {
 
 .open a {
     display: block;
+    background-color: var(--primary-color);
+    z-index: 1;
+    opacity: .9;
  }
 
  nav a {
@@ -102,18 +108,14 @@ header {
     padding: 2%;
 }
 
-header h1 {
-    padding: 1rem 0 0 0;
-    font-size: 2.5rem;
-}
-
 h2 {
+    text-align: center;
     padding: 1rem 0 0.5rem 0;
     font-size: 1.8rem;
 }
 
 p{
-    padding: 0 0 1rem 0;
+    padding: 0 2rem;
     font-size: 1.2rem;
 }
 
@@ -121,6 +123,20 @@ footer {
     border-top: 3px solid var(--accent3-color);
     text-align: center;
     padding: 2rem 0;
+
+}
+
+
+.card {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
 }
 
 
