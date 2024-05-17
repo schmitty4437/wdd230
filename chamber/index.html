@@ -5,30 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagleton Chamber of Commerce</title>
-    <meta name="description" content="description of page using keywords">
+    <meta name="description"
+        content="This page serves as the home page of the Eagleton Chamber of Commerce where visitors, community members, and businesses can connect with on another. The page also hosts information on events, weather, and business information.">
     <meta name="author" content="Matthew Schmitt">
-    <meta property="og:title" content="Matthew Schmitt - WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Eagleton Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://schmitty4437.github.io/wdd230/images/eagle-mountain-utah.jpg">
     <meta property="og:url" content="https://schmitty4437.github.io/wdd230/chamber/">
     <link rel="icon" href="favicon1.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Discovery</a>
-            <div id="logo"><a href=""><img src="" alt=""></a></div>
-            <a href="">Directory</a>
-            <a href="">Join</a>
+        <nav id="larger-nav">
+            <a href="index.html">Home</a>
+            <a href="discovery/">Discovery</a>
+            <div id="logo"><a href="index.html"><img src="images/em-chamber-logo.png" alt=""></a></div>
+            <a href="directory/">Directory</a>
+            <a href="join/">Join</a>
+        </nav>
+        <div id="logo-mobile"><a href="index.html"><img src="images/em-chamber-logo.png" alt=""></a></div>
+        <button id="menu" title="Mobile menu button"></button>
+        <nav id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="discovery">Discovery</a>
+            <a href="directory/">Directory</a>
+            <a href="join/">Join</a>
         </nav>
     </header>
-
-    <main></main>
-    <footer>&copy;2024 Matthew Schmitt | BYU-Idaho | WDD230</footer>
-    <script src="scripts/"></script>
+    <main>
+        <div class="hero">
+            <img src="images/eagleton-landscape-view.jpeg"
+                alt="View on top of mountain looking over Eagleton city and blue lake.">
+            <h1>Eagleton Chamber of Commerce</h1>
+        </div>
+        <Section>
+            <img src="images/demolition-derby.jpg">
+            <h2>Upcoming Event</h2>
+            <p>
+                Welcome to Eagleton Utah's Demolition Derby, where fearless drivers converge in an electrifying
+                spectacle of automotive chaos. In this adrenaline-fueled arena, cars of all shapes and sizes collide
+                with thunderous force, sending sparks and debris flying amidst cheers from the crowd. With skill and
+                strategy, drivers navigate their battered machines, aiming for victory while dodging incoming blows.
+                It's a test of nerves and reflexes, where survival amidst the wreckage is the only rule. Buckle up and
+                brace yourself for the ultimate showdown of vehicular mayhem in Eagleton Utah's Demolition Derby..</p>
+            <a href="#">
+                <div>
+                    <h3>All Events</h3>
+                </div>
+            </a>
+        </Section>
+        <section>
+            <h2>Company Spotlights</h2>
+            <div class="company1">
+                <img src="images/sweet-candy.png" alt="Variety of Sweetums products">
+                <h3>Sweetums</h3>
+                <p></p>
+            </div>
+            <div class="company2">
+                <img src="images/rentswag.jpg" alt="Rant A Swag clothinng and accessory rentals">
+                <h3>Rant A Swag</h3>
+                <p></p>
+            </div>
+            <div class="company3">
+                <img src="images/Duke-Silver-performing-at-Cozys-on-Parks-and-Rec.avif"
+                    alt="Duke Silver playing at Cozy's">
+                <h3>Cozy's</h3>
+                <p></p>
+            </div>
+        </section>
+        <section>
+            <h2>Join Us!</h2>
+            <a href="#">
+                <div>
+                    <h3>Join</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <img src="" alt="">
+        <p>130 Hilma Road<br>Eagleton, Utah 84005</p>
+        <p>info@ecc.org<br>(801)-555-5555</p>
+        <p>Location Map</p>
+        <p>&copy;<span id="currentYear"></span> | Matthew Schmitt | Utah, United States</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
 </body>
 
 </html>
