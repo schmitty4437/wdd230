@@ -13,19 +13,10 @@
     --nav-hover-link-color: #89CAD9;
 }
 
-@media  screen and (min-width: 769px) {
+@media  screen and (min-width: 1200px) {
     #menu, #mobile-nav, #logo-mobile {
         display: none;
     }
-
-    /* header {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
-        justify-items: space-between;
-    } */
 
     header {
         display: grid;
@@ -43,6 +34,18 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+@media  screen and (min-width: 769px) {
+
+    /* header {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+        justify-items: space-between;
+    } */
 
     .card, footer {
         display: grid;

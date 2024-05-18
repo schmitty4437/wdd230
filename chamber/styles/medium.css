@@ -1,0 +1,25 @@
+@media  screen and (min-width: 769px) and (max-width: 1199px) {
+    #logo-mobile img {
+        width: 170px;
+    }
+
+    header {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+    }
+
+    #logo-mobile {
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #menu {
+        grid-column: 2;
+        width: 150px;
+        grid-column: 4/5;
+    }
+
+    #mobile-nav {
+        top: 10rem;
+    }
+}
