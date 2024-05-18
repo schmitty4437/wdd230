@@ -80,7 +80,7 @@ header {
     display: block;
     background-color: var(--primary-color);
     z-index: 1;
-    opacity: .9;
+    /* opacity: .9; */
  }
 
  nav a {
@@ -135,6 +135,10 @@ footer p {
     font-size: 1em;
 }
 
+footer img {
+    width: 40%;
+}
+
 .card {
     clear: both;
     display: grid;
@@ -145,6 +149,10 @@ footer p {
 .card img {
     width: 100%;
     height: auto;
+}
+
+#weather {
+    text-align: center;
 }
 
 
