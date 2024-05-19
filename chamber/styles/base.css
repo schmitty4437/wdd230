@@ -141,8 +141,6 @@ header {
     width: 100%;
     transition: width 0.25s ease-in-out 0.25s;
   }
-  
-
 
  .hero img {
     display: block;
@@ -165,6 +163,10 @@ h2 {
     text-align: center;
     padding: 1rem 0 0.5rem 0;
     font-size: 1.8rem;
+}
+
+.card h3 {
+    text-align: center;
 }
 
 p {
@@ -203,6 +205,38 @@ footer img {
     text-align: center;
 }
 
+.join {
+    margin: 3rem 0;
+}
 
-@media  screen and (max-width: 768px) {
+.join p {
+    padding: 2rem;
+    text-align: center;
+}
+
+.join a {
+    margin: auto;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--nav-link-color);
+    border-radius: 1.5rem;
+    margin: auto;
+}
+
+.button a, .button h3 {
+    color: var(--nav-hover-link-color);
+}
+
+.button a {
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #events p {
+        margin-bottom: 2rem;
+    }
 }

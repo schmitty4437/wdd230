@@ -79,9 +79,9 @@
         text-align: center;
     }
 
-    #events a {
+    #events .button {
+        grid-row: 3;
         grid-column: 7/12;
-        justify-self: center;
     }
     
     #events picture {
@@ -114,12 +114,21 @@
     }
 
     .card .join {
-        /* grid-row: 1; */
-        grid-column: 7/11 !important;
+        grid-column: 7/11;
+        margin-top: 0;
     }
 
     .join a {
         text-align: center;
+    }
+
+    .join p {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .join .button {
+        grid-column: 10/12;
     }
 
     footer img {

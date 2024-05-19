@@ -22,4 +22,8 @@
     #mobile-nav {
         top: 10rem;
     }
+
+    #events p {
+        margin-bottom: 2rem;
+    }
 }
