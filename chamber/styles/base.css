@@ -222,12 +222,8 @@ footer img {
     border-radius: 1.5rem;
     margin: auto;
     padding: 1.5rem 3rem;
-    color: var(--nav-hover-link-color);
+    color: var(--accent1-color);
     text-decoration: none;
-}
-
-.button a, .button h3 {
-    color: var(--nav-hover-link-color);
 }
 
 .button a {
