@@ -210,13 +210,10 @@ footer img {
 }
 
 .join p {
-    padding: 2rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
-.join a {
-    margin: auto;
-}
 .button {
     display: flex;
     flex-direction: column;
@@ -224,6 +221,9 @@ footer img {
     background-color: var(--nav-link-color);
     border-radius: 1.5rem;
     margin: auto;
+    padding: 1.5rem 3rem;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
 }
 
 .button a, .button h3 {

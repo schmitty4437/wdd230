@@ -79,9 +79,9 @@
         text-align: center;
     }
 
-    #events .button {
+  .button {
         grid-row: 3;
-        grid-column: 7/12;
+        grid-column: 6/12;
     }
     
     #events picture {
@@ -118,17 +118,9 @@
         margin-top: 0;
     }
 
-    .join a {
-        text-align: center;
-    }
-
     .join p {
         padding: 2rem 0;
         text-align: center;
-    }
-
-    .join .button {
-        grid-column: 10/12;
     }
 
     footer img {
