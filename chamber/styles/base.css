@@ -79,7 +79,7 @@ header {
 
 .slider:before {
   position: absolute;
-  content: url('/chamber/images/dark-mode-button.svg');
+  content: url('/images/profile.jpg');
   height: 26px;
   width: 26px;
   left: 4px;
