@@ -3,30 +3,43 @@ const body = document.querySelector('body');
 const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
 const nav = document.querySelectorAll('#larger-nav a');
 const menu = document.querySelector('#menu');
-const logo = document.querySelector('#logo-mobile img, #larger-nav img');
+const logos = document.querySelectorAll('#logo-mobile img, #larger-nav img, footer img');
+const buttons = document.querySelectorAll('.button');
 
 modeButton.addEventListener('change', () => {
     if (modeButton.checked) {
         body.style.background = '#000';
         body.style.color = '#fff';
         menu.style.color = '#fff';
-        logo.src = 'images/ecc-logo-white.svg';
         headings.forEach(heading => {
             heading.style.color = '#fff';
         });
         nav.forEach(link => {
             link.style.color = '#fff';
         });
+        buttons.forEach(button => {
+            button.style.background = '#F29849';
+            button.style.color = '#254559';
+        });
+        logos.forEach(logo => {
+            logo.src = 'images/ecc-logo-white.svg';
+        })
     } else {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
         menu.style.color = '#254559';
-        logo.src = 'images/ecc-logo.svg';
         headings.forEach(heading => {
             heading.style.color = '#254559';
         });
         nav.forEach(link => {
             link.style.color = '#254559';
+        });
+        buttons.forEach(button => {
+            button.style.background = '#254559';
+            button.style.color = '#F2EBDC';
+        });
+        logos.forEach(logo => {
+            logo.src = 'images/ecc-logo.svg';
         })
     }
 });

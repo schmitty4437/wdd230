@@ -55,8 +55,8 @@ header {
   display: flex;
   width: 60px;
   height: 34px;
-  top: px;
-  right: 2.1rem;
+  top: 1px;
+  right: 2rem;
 }
 
 .switch input { 
@@ -84,13 +84,12 @@ header {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  /* background-color: #fff; */
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: var(--accent3-color);
+  background-color: var(--accent2-color);
 }
 
 input:focus + .slider {
@@ -227,7 +226,7 @@ input:checked + .slider:before {
 
 .hero h1 {
     position: absolute;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
