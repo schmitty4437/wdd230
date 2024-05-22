@@ -79,7 +79,7 @@ header {
 
 .slider:before {
   position: absolute;
-  content: url(/chamber/images/dark-mode-button.svg);
+  content: url('/chamber/images/dark-mode-button.svg');
   height: 26px;
   width: 26px;
   left: 4px;
@@ -87,7 +87,6 @@ header {
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  z-index: 1;
 }
 
 input:checked + .slider {
@@ -102,8 +101,7 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-    content: url(/chamber/images/light-mode-button.svg); /* Sun icon */
-    z-index: 1;
+    content: url('/chamber/images/light-mode-button.svg'); /* Sun icon */
 }
 
 input:checked + .slider:before {
