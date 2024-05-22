@@ -3,6 +3,10 @@
         width: 170px;
     }
 
+    .switch {
+        grid-column: 4/5;
+    }
+
     header {
         grid-template-columns: 1fr 2fr 1fr 2fr;
     }
