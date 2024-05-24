@@ -242,6 +242,7 @@ h2 {
 
 .card h3 {
     text-align: center;
+    padding: 2rem 0;
 }
 
 p {
@@ -304,6 +305,10 @@ footer img {
 .button a {
     text-decoration: none;
     padding: 1.5rem 4rem;
+}
+
+#company-spot p {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
