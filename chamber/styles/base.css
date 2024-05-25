@@ -158,9 +158,8 @@ input:checked + .slider:before {
     /* opacity: .9; */
  }
 
- nav a {
+header nav a {
     display: none;
-    padding: 2rem;
     text-align: center;
     color: var(--accent1-color);
     text-decoration: none;
@@ -255,14 +254,17 @@ footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 footer p {
     font-size: 1em;
 }
 
-footer img {
+.footer-logo {
     width: 40%;
+    justify-self: center;
 }
 
 .card {
@@ -307,12 +309,43 @@ footer img {
     padding: 1.5rem 4rem;
 }
 
+.social-links ul {
+  display: grid;
+  list-style: none;
+}
+
+
 #company-spot p {
   text-align: center;
+}
+
+.button {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
     #events p {
         margin-bottom: 2rem;
+    }
+
+    .social-links ul {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .social-links li {
+      grid-column: 2;
+      padding: 1rem;
+    }
+    
+    .social-links li:nth-of-type(2) {
+      grid-column: 3;
+    }
+    
+    .social-links li:nth-of-type(3) {
+      grid-column: 4;
+    }
+    
+    #company-spot p {
+      text-align: center;
     }
 }

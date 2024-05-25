@@ -3,7 +3,10 @@ const body = document.querySelector('body');
 const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
 const nav = document.querySelectorAll('#larger-nav a');
 const menu = document.querySelector('#menu');
-const logos = document.querySelectorAll('#logo-mobile img, #larger-nav img, footer img');
+const logos = document.querySelectorAll('#logo-mobile img, #larger-nav img, footer .footer-logo');
+const facebook = document.querySelector('.facebook');
+const linkedin = document.querySelector('.linkedin');
+const instagram = document.querySelector('.instagram');
 const buttons = document.querySelectorAll('.button');
 
 modeButton.addEventListener('change', () => {
@@ -11,6 +14,11 @@ modeButton.addEventListener('change', () => {
         body.style.background = '#000';
         body.style.color = '#fff';
         menu.style.color = '#fff';
+
+        facebook.src = 'images/facebook-icon-white.svg';
+        linkedin.src = 'images/linkedin-logo-white.svg';
+        instagram.src = 'images/instagram-icon-white.svg';
+
         headings.forEach(heading => {
             heading.style.color = '#fff';
         });
@@ -28,6 +36,11 @@ modeButton.addEventListener('change', () => {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
         menu.style.color = '#254559';
+
+        facebook.src = 'images/facebook-icon.svg';
+        linkedin.src = 'images/linkedin-logo.svg';
+        instagram.src = 'images/instagram-icon.svg';
+
         headings.forEach(heading => {
             heading.style.color = '#254559';
         });
