@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images: srcset</title>
+    <meta name="description" content="Activity showing the use of srcset to create responsive images">
+    <meta name="author" content="Matthew Schmitt">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <nav></nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/mount-timpanogos-temple-500.webp">
+                <source media="(max-width: 1000px)" srcset="images/mount-timpanogos-temple-1000.webp">
+                <img src="images/mount-timpanogos-temple-1500.webp"
+                    alt="Beautiful flowers in front of Mount Timpanogos Temple in American Fork Utah" width="1500"
+                    height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>&copy;2024 Matthew Schmitt | BYU-Idaho | WDD230</footer>
+    <script src="scripts/"></script>
+</body>
+
+</html>

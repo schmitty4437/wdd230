@@ -90,12 +90,12 @@
         }
 
         p {
-  counter-increment: paras;
-}
+            counter-increment: paras;
+        }
 
-p::before {
- content: '🔸' counter(paras) ':';
-}
+        p::before {
+            content: '🔸' counter(paras) ':';
+        }
     </style>
 </head>
 
@@ -105,8 +105,6 @@ p::before {
     </header>
     <nav></nav>
     <main>
-        <p>testing</p>
-        <p>testing</p>
         <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="triangles" clip-path="url(#clip0_1_2)">
                 <g id="darkGroup">
