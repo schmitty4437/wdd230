@@ -47,7 +47,35 @@ header h1 {
     padding-left: 0;
 }
 
-img {
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	background: radial-gradient(#fff, #10CC4A);
+	border: 1px solid rgba(0,0,0,.75);
+    border-radius: 0.5rem;
+	padding: 0 0.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 900;
+	font-size: 1rem;
+	font-family: var(--paragraph-font);
+}
+
+.profile {
     display: block;
     margin: auto;
     max-width: 125px;
@@ -142,4 +170,11 @@ hr {
 #card-map iframe {
     width: 100%;
     margin-top: 1.5rem;
+}
+
+@media  screen and (min-width: 100px) {
+    .herolabel {
+        top: 50px;
+	    left: 50px;
+    }
 }

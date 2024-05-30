@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile picture of Matthew Schmitt">
+        <img src="images/profile.webp" class="profile" alt="Profile picture of Matthew Schmitt">
         <h1>Matthew Schmitt</h1>
         <button id="menu" title="Mobile menu button"></button>
     </header>
@@ -38,6 +38,18 @@
             target="_blank">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/mount-timpanogos-temple-storm-400.webp">
+                <source media="(min-width: 401px)" srcset="images/mount-timpanogos-temple-storm-1830-915.webp">
+                <img src="images/mount-timpanogos-temple-storm-1830-915.webp"
+                    alt="Beautiful flowers in front of Mount Timpanogos Temple in American Fork Utah" width="1830"
+                    height="915">
+            </picture>
+            <div class="herolabel">
+                <p>Mount Timpanogos Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr class="separator">
         <section class="card" id="card-activities">
@@ -54,7 +66,8 @@
                 <li>04: <a href="https://codepen.io/Matthew-Schmitt/pen/BaeyYqX" target="_blank">Psuedo Classes</a>
                 </li>
                 <li>05: <a href="lesson05/bom.html" target="_blank">DOM Manipulation</a> </li>
-                <li>06: <a href="lesson06/images/landscape.webp" target="_blank">WebP Format</a> | <a href="lesson06/responsive-images.html" target="_blank">Responsive Images</a></li>
+                <li>06: <a href="lesson06/images/landscape.webp" target="_blank">WebP Format</a> | <a
+                        href="lesson06/responsive-images.html" target="_blank">Responsive Images</a></li>
                 <li>07: <a href="">Assignment 7</a> </li>
                 <li>08: <a href="">Assignment 8</a> </li>
                 <li>09: <a href="">Assignment 9</a> </li>
