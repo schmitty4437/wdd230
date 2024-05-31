@@ -1,3 +1,9 @@
+@media  screen and (min-width: 401px) and (max-width: 1199px) {
+    .small, .large {
+        display: none;
+    }
+}
+
 @media  screen and (min-width: 769px) and (max-width: 1199px) {
     #logo-mobile img {
         width: 170px;

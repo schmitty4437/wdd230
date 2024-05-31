@@ -47,7 +47,7 @@
 
     </header>
     <main>
-        <div class="hero">
+        <!-- <div class="hero">
             <img sizes="(max-width: 1500px) 100vw, 1500px" srcset="
             images/eagleton-landscape-view_ylqdo3_c_scale,w_200.jpg 200w,
             images/eagleton-landscape-view_ylqdo3_c_scale,w_551.jpg 551w,
@@ -63,6 +63,21 @@
                 src="images/eagleton-landscape-view_ylqdo3_c_scale,w_1500.jpg"
                 alt="Lanscape view of Eagleton city overlooking mountains and lake.">
             <h1>Eagleton Chamber of Commerce</h1>
+        </div> -->
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/wdd230-org-400.webp">
+                <source media="(max-width: 1199px)" srcset="images/wdd230-org-1199.webp">
+                <source media="(min-width: 1200px)" srcset="images/wdd230-org-1500.webp">
+                <img src="images/wdd230-org-1500.webp"
+                    alt="Beautiful flowers in front of Mount Timpanogos Temple in American Fork Utah" width="1500"
+                    height="600">
+            </picture>
+            <div class="herolabel">
+                <p class="small">Small</p>
+                <p class="medium">Medium</p>
+                <p class="large">Large</p>
+            </div>
         </div>
         <Section class="card" id="events">
             <picture>
@@ -124,9 +139,9 @@
             <div id="weather">
                 <h2>Weather</h2>
                 <hr>
-                <p>Sunny</p>
-                <p>Humidity</p>
-                <p>Degrees</p>
+                <p>Temperature: <span id="temperature">41</span>°F</p>
+                <p>Wind Speed: <span id="windspeed">21 </span>mph</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
             </div>
             <div class="join">
                 <h2>Join Us!</h2>
@@ -155,6 +170,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

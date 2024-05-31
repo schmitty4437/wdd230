@@ -223,7 +223,7 @@ header nav a {
     float: right;
 }
 
-.hero h1 {
+.herolabel {
     position: absolute;
     color: var(--accent2-color);
     width: 100%;
@@ -321,6 +321,12 @@ footer p {
 
 .button {
   font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+  .large, .medium {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
