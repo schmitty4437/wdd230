@@ -30,7 +30,7 @@ modeButton.addEventListener('change', () => {
             button.style.color = '#254559';
         });
         logos.forEach(logo => {
-            logo.src = 'images/ecc-logo-white.svg';
+            logo.src = 'images/ecc-logo-white.webp';
         })
     } else {
         body.style.background = '#F2EBDC';
@@ -52,7 +52,7 @@ modeButton.addEventListener('change', () => {
             button.style.color = '#F2EBDC';
         });
         logos.forEach(logo => {
-            logo.src = 'images/ecc-logo.svg';
+            logo.src = 'images/ecc-logo.webp';
         })
     }
 });
