@@ -15,9 +15,9 @@ modeButton.addEventListener('change', () => {
         body.style.color = '#fff';
         menu.style.color = '#fff';
 
-        facebook.src = 'images/facebook-icon-white.svg';
-        linkedin.src = 'images/linkedin-logo-white.svg';
-        instagram.src = 'images/instagram-icon-white.svg';
+        facebook.src = 'images/facebook-icon-white.webp';
+        linkedin.src = 'images/linkedin-logo-white.webp';
+        instagram.src = 'images/instagram-icon-white.webp';
 
         headings.forEach(heading => {
             heading.style.color = '#fff';
@@ -37,9 +37,9 @@ modeButton.addEventListener('change', () => {
         body.style.color = '#000';
         menu.style.color = '#254559';
 
-        facebook.src = 'images/facebook-icon.svg';
-        linkedin.src = 'images/linkedin-logo.svg';
-        instagram.src = 'images/instagram-icon.svg';
+        facebook.src = 'images/facebook-icon.webp';
+        linkedin.src = 'images/linkedin-logo.webp';
+        instagram.src = 'images/instagram-icon.webp';
 
         headings.forEach(heading => {
             heading.style.color = '#254559';
