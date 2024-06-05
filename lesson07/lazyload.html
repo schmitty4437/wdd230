@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demo</title>
+    <meta name="description" content="Showing how lazy loading works with 6 imagees all centered down one column">
+    <meta name="author" content="Matthew Schmitt">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Demo</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://picsum.photos/id/117/400/600" loading="lazy" width="400" height="600" alt="random picture 1">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/255/400/600" loading="lazy" width="400" height="600" alt="random picture 2">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/24/400/600" loading="lazy" width="400" height="600" alt="random picture 3">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/44/400/600" loading="lazy" width="400" height="600" alt="random picture 4">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/600/400/600" loading="lazy" width="400" height="600" alt="random picture 5">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/301/400/600" loading="lazy" width="400" height="600" alt="random picture 6">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Matthew Schmitt | WDD 230 - Lazy Loading</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
