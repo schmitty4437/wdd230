@@ -2,7 +2,7 @@
 const visitsDisplay = document.querySelector(".visits");
 
 // Get stored value if it exists in localStorage. If missing assign 0 to numVisits
-let numVisits = Number(window.localStorage.getItem("numVisists-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 //Use if/else to see if it is the users first visit or not.
 if(numVisits !==0) {
