@@ -14,4 +14,5 @@ if(numVisits !==0) {
 // Increment number of visits
 numVisits++;
 
+// Store new visit total in localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
