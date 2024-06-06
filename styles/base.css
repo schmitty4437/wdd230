@@ -172,6 +172,10 @@ hr {
     margin-top: 1.5rem;
 }
 
+.label {
+    font-weight: 900;
+}
+
 @media  screen and (min-width: 100px) {
     .herolabel {
         top: 50px;
