@@ -170,6 +170,7 @@ hr {
 #card-map iframe {
     width: 100%;
     margin-top: 1.5rem;
+    border-style: none;
 }
 
 .label {
