@@ -274,7 +274,7 @@ footer p {
     padding-top: 4rem;
 }
 
-.card img {
+.card img, .wrapper img {
     width: 100%;
     height: auto;
 }
@@ -322,6 +322,38 @@ footer p {
 .button {
   font-weight: 700;
 }
+
+
+/* Discover page */
+.label {
+  font-weight: 900;
+}
+
+.label-visits {
+  padding: 3rem;
+}
+
+.side-events, .side-facts, .side-attractions, .side-news {
+  border: 3px solid var(--accent3-color);
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+aside h2 {
+  text-align: left;
+  border-bottom: 6px solid var(--accent3-color);
+  
+}
+
+aside h2, aside h3 {
+  padding: 1rem;
+}
+
+aside p {
+  padding-top: 2rem;
+  padding: 1rem;
+}
+
 
 @media screen and (max-width: 400px) {
   .large, .medium {

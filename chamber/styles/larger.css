@@ -56,11 +56,16 @@
         justify-items: space-between;
     } */
 
+    #events, #company-spot, .card {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     #larger-nav a {
         padding: 2rem;
     }
 
-    .card, footer {
+    .card, footer, .wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 2rem;
@@ -193,4 +198,16 @@
     .social-links img {
         width: 50%;
     }
+
+    /* Discover Page */
+
+    aside {
+        grid-column: 3/6;
+    }
+
+    main {
+        grid-column: 6/11;
+    }
+
+    
 }

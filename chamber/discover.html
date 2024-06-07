@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page</title>
+    <meta name="description"
+        content="This page serves as the home page of the Eagleton Chamber of Commerce where visitors, community members, and businesses can connect with on another. The page also hosts information on events, weather, and business information.">
+    <meta name="author" content="Matthew Schmitt">
+    <meta property="og:title" content="Eagleton Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schmitty4437.github.io/wdd230/images/eagle-mountain-utah.jpg">
+    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/chamber/">
+    <link rel="icon" href="favicon1.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <nav id="larger-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="active link-style">Discovery</a>
+            <div id="logo"><a href="index.html"><img src="images/ecc-logo.webp" alt="Eagleton Chamber of Commerce logo"
+                        width="140" height="100"></a>
+            </div>
+            <a href="directory.html" class="link-style">Directory</a>
+            <a href="join.html" class="link-style">Join</a>
+        </nav>
+        <div id="logo-mobile"><a href="index.html"><img src="images/ecc-logo.webp"
+                    alt="Eagleton Chamber of Commerce logo"></a></div>
+        <button id="menu" title="Mobile menu button"></button>
+        <nav id="mobile-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="active link-style">Discovery</a>
+            <a href="directory.html" class="link-style">Directory</a>
+            <a href="join.html" class="link-style">Join</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            Dark Mode
+        </label>
+
+    </header>
+    <div class="wrapper">
+        <aside>
+            <section class="side-facts">
+                <h2>Eagleton Facts</h2>
+                <p><span class="label">Population: </span>150,000</p>
+                <p><span class="label">Median age: </span>35</p>
+                <p><span class="label">Median Income: </span>$125,000</p>
+                <p><span class="label">Tourists (annual): </span>500,000</p>
+                <p><span class="label">Graduation rate: </span>95%</p>
+            </section>
+            <section class="side-news">
+                <h2>News</h2>
+                <article>
+                    <h3>Annual Mountain Music Festival</h3>
+                    <p>June 10, 2024 - Eagleton's beloved Mountain Music Festival returns this summer at Mountain
+                        Village. Enjoy live performances from local bands, artisan crafts, and delicious food. Tickets
+                        are available now!</p>
+                </article>
+                <article>
+                    <h3>New Tech Hub Opens Downtown</h3>
+                    <p>May 25, 2024 - Eagleton welcomes its latest addition to the business community with the grand
+                        opening of the Eagleton Innovation Center. This state-of-the-art facility aims to attract tech
+                        startups and foster innovation.</p>
+                </article>
+                <article>
+                    <h3>Eagleton Peaks Record</h3>
+                    <p>May 15, 2024 - Eagleton Peaks National Park saw a record number of visitors this spring, with
+                        over 100,000 nature enthusiasts exploring the trails and wildlife. Park officials plan to expand
+                        facilities to accommodate the growing numbers.</p>
+                </article>
+                <article>
+                    <h3>Eagle Ridge Ski Resort Plans Expansion</h3>
+                    <p>May 3, 2024 - Eagle Ridge Ski Resort announces plans to expand its facilities with new slopes and
+                        a larger lodge. Construction will begin this fall, with new amenities available next ski season.
+                    </p>
+                </article>
+            </section>
+            <section class="side-events">
+                <h2>Events</h2>
+                <p>Demoltion Derby</p>
+                <p>Concert in the Park</p>
+                <p>Rodeo</p>
+                <p>Movie in the Park</p>
+            </section>
+            <section class="side-attractions">
+                <h2>Attractions</h2>
+                <p>Eagleton Peaks National Park</p>
+                <p>Hot Springs</p>
+                <p>Silver Falls</p>
+                <p>Adventure Park</p>
+            </section>
+            <section class="visits">
+                <p><span class="visits"></span></p>
+            </section>
+        </aside>
+        <main>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/eagleton-at-night.webp">
+                <source media="(max-width: 1199px)" srcset="images/eagleton-at-night-800.webp">
+                <source media="(min-width: 1200px)" srcset="">
+                <img src="images/eagleton-at-night-1000.webp"
+                    alt="Eagleton city at night with view of mountains and lake" width="1050" height="591">
+                <figcaption>text here 1</figcaption>
+            </picture>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/eagleton-rodeo.webp">
+                <source media="(max-width: 1199px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="images/eagleton-rodeo-800.webp">
+                <img src="images/eagleton-rodeo-800.webp" alt="Cowboy riding horse at Eagleton City Rodeo" width="800"
+                    height="600">
+                <figcaption>text here 2</figcaption>
+            </picture>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/eagleton-ski-resort.webp">
+                <source media="(max-width: 1199px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="images/eagleton-ski-resort-800.webp">
+                <img src="images/eagleton-ski-resort-800.webp"
+                    alt="Large snow covered mountain with view of Eagleton Ski Resort" width="800" height="600">
+                <figcaption>text here 3</figcaption>
+            </picture>
+            <picture<source media="(max-width: 400px)" srcset="images/eagleton-atv-trails.webp">
+                <source media="(max-width: 1199px)" srcset="">
+                <source media="(min-width: 1200px)" srcset="images/eagleton-atv-trails-800.webp">
+                <img src="images/eagleton-atv-trails-800.webp"
+                    alt="People enjoying four wheeeler rides during sunrise in Eagleton" width="800" height="600">
+                </picture>
+                <figcaption>Enjoy all the beautiful trails Eagleton has to offer</figcaption>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/eagleton-outdoor-dining.webp">
+                    <source media="(max-width: 1199px)" srcset="">
+                    <source media="(min-width: 1200px)" srcset="images/eagleton-outdoor-dining-800.webp">
+                    <img src="images/eagleton-outdoor-dining-800.webp"
+                        alt="People enjoying meals outdoors in downtown Eagleton" width="800" height="600">
+                    <figcaption>Take part in dining outdoors in downtown Eagleton</figcaption>
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/eagleton-peaks.webp">
+                    <source media="(max-width: 1199px)" srcset="">
+                    <source media="(min-width: 1200px)" srcset="images/eagleton-peaks-800.webp">
+                    <img src="images/eagleton-peaks-800.webp"
+                        alt="View from Eagleton Peaks over looking the mountains and valley" width="800" height="600">
+                    <figcaption>Take part in dining outdoors in downtown Eagleton</figcaption>
+                </picture>
+        </main>
+    </div>
+    <footer>
+        <img src="images/ecc-logo.webp" class="footer-logo" alt="Eagleton Chamber of Commerce Logo">
+        <p>Eagleton Chamber of Commerce<br>130 Hilma Road<br>Eagleton, Utah 84005</p>
+        <p>info@ecc.org<br>(801)-555-5555<br><br>Location Map</p>
+        <nav class="social-links">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.webp"
+                            class="facebook" alt="facebook logo links to their website"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.webp"
+                            class="linkedin" alt="linkedin logo links to their website"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.webp"
+                            class="instagram" alt="instagram logo links to their website"></a></li>
+            </ul>
+        </nav>
+        <p>&copy;<span id="currentYear"></span> ECC | Matthew Schmitt | WDD 230 Project</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>
