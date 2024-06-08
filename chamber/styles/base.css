@@ -354,6 +354,10 @@ aside p {
   padding: 1rem;
 }
 
+figcaption {
+  margin: .5rem 0 2rem 0;
+}
+
 
 @media screen and (max-width: 400px) {
   .large, .medium {
@@ -390,5 +394,10 @@ aside p {
     
     #company-spot p {
       text-align: center;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
     }
 }
