@@ -213,7 +213,7 @@
         transition: transform 1s, box-shadow 1s;
     }
 
-    main img:hover {
+    .discover-images img:hover {
         transform: scale(.95);
         box-shadow:  0px 0px 10px 1px var(--accent3-color);
     }
