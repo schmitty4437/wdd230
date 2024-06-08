@@ -217,4 +217,12 @@
         transform: scale(.95);
         box-shadow:  0px 0px 10px 1px var(--accent3-color);
     }
+
+    .discover-title {
+        grid-column: 1/13;
+    }
+
+    .discover-title::after {
+        width: 30%;
+      }
 }
