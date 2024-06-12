@@ -76,7 +76,7 @@ main {
 }
 
 .wf1 input[type="text"],
-.wf1 input[type="te;"],
+.wf1 input[type="tel"],
 .wf1 input[type="email"],
 .wf1 input[type="url"],
 .wf1 input[type="date"],
@@ -90,6 +90,7 @@ main {
     color: #555;
     width: 100%;
     max-width: 400px;
+    appearance: none;
 }
 
 .wf1 input[type="radio"],
