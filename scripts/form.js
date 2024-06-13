@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //access form elements
         let formt = event.target;
-        let formData = new FormDataEvent(formt);
+        let formData = new FormData(formt);
 
         //display form element values
         for (let pair of formData.entries()) {
