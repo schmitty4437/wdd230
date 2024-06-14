@@ -18,30 +18,6 @@ function checkSame() {
     }
 }
 
-
-// email input validation
-document.addEventListener("DOMContentLoaded", function() {
-    //function to handle form submission
-    function handleSubmit(event) {
-        //prevent default form submission
-        event.preventDefault();
-
-        //access form elements
-        let formt = event.target;
-        let formData = new FormData(formt);
-
-        //display form element values
-        for (let pair of formData.entries()) {
-            console.log(pair[0] + ": " + pair[1]);
-        }
-    }
-
-    const form = document.querySelector("form");
-    form.addEventListener("submit", handleSubmit);
-});
-
-
-
 // Range selector
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("rating");
