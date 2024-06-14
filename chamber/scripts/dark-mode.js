@@ -1,6 +1,6 @@
 const modeButton = document.querySelector('.switch input');
 const body = document.querySelector('body');
-const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
+const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 const nav = document.querySelectorAll('#larger-nav a');
 const menu = document.querySelector('#menu');
 const logos = document.querySelectorAll('#logo-mobile img, #larger-nav img, footer .footer-logo');
@@ -8,12 +8,17 @@ const facebook = document.querySelector('.facebook');
 const linkedin = document.querySelector('.linkedin');
 const instagram = document.querySelector('.instagram');
 const buttons = document.querySelectorAll('.button');
+const legends = document.querySelectorAll('legend');
+const labels = document.querySelectorAll('label');
+const member = document.querySelector('.mem-select');
+
 
 modeButton.addEventListener('change', () => {
     if (modeButton.checked) {
         body.style.background = '#000';
         body.style.color = '#fff';
         menu.style.color = '#fff';
+        member.style.color = '#fff';
 
         facebook.src = 'images/facebook-icon-white.webp';
         linkedin.src = 'images/linkedin-logo-white.webp';
@@ -31,11 +36,18 @@ modeButton.addEventListener('change', () => {
         });
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo-white.webp';
-        })
+        });
+        legends.forEach(legend => {
+            legend.style.color = '#fff';
+        });
+        labels.forEach(label => {
+            label.style.color = '#fff';
+        });
     } else {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
         menu.style.color = '#254559';
+        member.style.color = '#254559';
 
         facebook.src = 'images/facebook-icon.webp';
         linkedin.src = 'images/linkedin-logo.webp';
@@ -53,6 +65,12 @@ modeButton.addEventListener('change', () => {
         });
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo.webp';
-        })
+        });
+        legends.forEach(legend => {
+            legend.style.color = '#254559';
+        });
+        labels.forEach(label => {
+            label.style.color = '#254559';
+        });
     }
 });

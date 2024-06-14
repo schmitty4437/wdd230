@@ -377,6 +377,79 @@ figcaption {
 }
 
 
+
+/* Join page */
+.joinheader {
+  text-align: center;
+}
+
+.jform fieldset {
+  margin: 2rem 0;
+  border: 2px solid var(--accent3-color);
+  border-radius: 6px;
+  padding: .5rem 2%;
+}
+
+.jform legend {
+  color: var(--primary-color);
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+}
+
+.jform label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: .9rem;
+}
+
+.jform div {
+  padding-top: 1rem;
+  color: var(--primary-color);
+}
+
+.jform input[type="text"],
+.jform input[type="tel"],
+.jform input[type="email"],
+.jform input[type="url"],
+.jform input[type="number"],
+.jform textarea {
+  background-color: #eee;
+  display: block;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.jform input[type="radio"] {
+  margin-right: 6px;
+}
+
+.jform input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(var(--accent2-color), var(--accent3-color));
+  color: #fff;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.jform input:required {
+  border-left: 8px solid #ff0000;
+}
+
+.jform input:required:valid {
+  border-left: 8px solid #008000;
+}
+
+
 @media screen and (max-width: 400px) {
   .large, .medium {
     display: none;

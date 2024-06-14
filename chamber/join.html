@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagleton Chamber of Commerce</title>
+    <meta name="description"
+        content="This page serves as the home page of the Eagleton Chamber of Commerce where visitors, community members, and businesses can connect with on another. The page also hosts information on events, weather, and business information.">
+    <meta name="author" content="Matthew Schmitt">
+    <meta property="og:title" content="Eagleton Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schmitty4437.github.io/wdd230/images/eagle-mountain-utah.jpg">
+    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/chamber/">
+    <link rel="icon" href="favicon1.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <nav id="larger-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="link-style">Discover</a>
+            <div id="logo"><a href="index.html"><img src="images/ecc-logo.webp" alt="Eagleton Chamber of Commerce logo"
+                        width="140" height="100"></a>
+            </div>
+            <a href="directory.html" class="link-style">Directory</a>
+            <a href="join.html" class="active link-style">Join</a>
+        </nav>
+        <div id="logo-mobile"><a href="index.html"><img src="images/ecc-logo.webp"
+                    alt="Eagleton Chamber of Commerce logo"></a></div>
+        <button id="menu" title="Mobile menu button"></button>
+        <nav id="mobile-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="link-style">Discover</a>
+            <a href="directory.html" class="link-style">Directory</a>
+            <a href="join.html" class="active link-style">Join</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            Dark Mode
+        </label>
+    </header>
+    <div class="wrapper">
+        <main>
+            <h1 class="joinheader">Join ECC</h1>
+            <div id="formmessage"></div>
+            <form method="get" action="thankyou.html" class="jform">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
+                    <label for="position">Title or Position*<input type="text" id="position" name="position"
+                            pattern="^[a-zA-Z\s-]{7,}$" required></label>
+                    <label for="email">Email*<input type="email" id="email" name="email" placeholder="example@gmail.com"
+                            title="Please input a valid email address." required></label>
+                    <label for="phone">Phone*<input type="tel" id="phone" name="phone" placeholder="8015555555"
+                            required></label>
+                    <label for="org">Business/Organization's Name<input type="text" id="org" name="org"></label>
+                    <label for="description">Describe your Business/Organization</label>
+                    <textarea id="description" name="description" rows="8"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="mem-select">Select your membership:</div>
+                    <label><input type="radio" name="memberhsip" value="gold">Gold Membership</label>
+                    <label><input type="radio" name="memberhsip" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="memberhsip" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="memberhsip" value="np">Nonprofit Membership</label>
+                </fieldset>
+                <input type="hidden" name="time" id="time">
+                <input type="submit" value="Get My Membership">
+            </form>
+        </main>
+        <aside>
+            <section class="side-gold">
+                <h2>Gold Membership</h2>
+                <h3>$600 Annually</h3>
+                <ul>
+                    <li>All Silver level benefits</li>
+                    <li>Exclusive Event Invitations: Invitations to VIP networking events and exclusive receptions with
+                        community leaders and business influencers.</li>
+                    <li>Advertising Benefits: Featured spotlight position on the chamber's homepage for one month and
+                        premium advertising space in the chamber's monthly newsletter.</li>
+                    <li>Priority Access: Priority registration for all events, ensuring members get the first choice on
+                        limited-seating events and programs.</li>
+                    <li>Annual Business Expo: Free booth at the annual business expo, providing direct exposure to
+                        potential
+                        clients and partners.</li>
+                    <li>Personalized Business Consultation: Two sessions per year with a business advisor for
+                        personalized
+                        strategic planning and growth advice.</li>
+                    <li>Sponsorship Opportunities: Eligibility to sponsor major events, enhancing brand visibility and
+                        community presence.</li>
+                    <li>Enhanced Online Presence: Premium listing in the online member directory, including a company
+                        logo,
+                        business description, and direct contact links.</li>
+                </ul>
+            </section>
+            <section class="side-silver">
+                <h2>Silver Membership</h2>
+                <h3>$300 Annually</h3>
+                <ul>
+                    <li>All Bronze level benefits</li>
+                    <li>Training Workshops: Free attendance to four training workshops per year, covering essential
+                        business
+                        skills and industry-specific knowledge.</li>
+                    <li>Webinars: Access to an expanded library of member-only webinars on topics ranging from marketing
+                        strategies to financial planning.</li>
+                    <li>Enhanced Directory Listing: Enhanced listing in the online member directory with added business
+                        information and promotional materials.</li>
+                    <li>Event Discounts: Greater discounts on chamber events, including luncheons, seminars, and
+                        community
+                        gatherings.</li>
+                    <li>Newsletter Feature: Opportunity to be featured in the chamber's monthly newsletter, reaching a
+                        wide
+                        audience of local businesses and stakeholders.</li>
+                </ul>
+            </section>
+            <section class="side-bronze">
+                <h2>Bronze Membership</h2>
+                <h3>$150 Annually</h3>
+                <ul>
+                    <li>Networking Events: Access to monthly networking events, providing opportunities to connect with
+                        other local businesses and community leaders.</li>
+                    <li>Basic Directory Listing: Basic listing in the online member directory with business name and
+                        contact
+                        information.</li>
+                    <li>Event Discounts: Discounts on chamber events, including educational seminars and social
+                        gatherings.
+                    </li>
+                    <li>Resource Access: Access to the chamber's resource library, including industry reports, business
+                        templates, and regulatory updates.</li>
+                    <li>Promotional Opportunities: Opportunities to promote your business through chamber social media
+                        channels and at community events.</li>
+                </ul>
+            </section>
+            <section class="side-Nonprofit">
+                <h2>Nonprofit Membership</h2>
+                <h3>There is no fee.</h3>
+                <ul>
+                    <li>Networking Events: Access to monthly networking events tailored to nonprofits, providing
+                        opportunities to connect with potential donors and collaborators.</li>
+                    <li>Directory Listing: Basic listing in the online member directory, highlighting nonprofit status
+                        and
+                        mission.</li>
+                    <li>Event Discounts: Discounts on chamber events, particularly those focused on nonprofit management
+                        and
+                        fundraising.</li>
+                    <li>Training Workshops: Access to two free training workshops per year, focusing on nonprofit
+                        management, grant writing, and community engagement.</li>
+                    <li>Resource Access: Access to the chamber's nonprofit resource library, including funding
+                        opportunities, volunteer management tools, and best practices guides.</li>
+                    <li>Volunteer Matching: Inclusion in the chamber's volunteer matching program, connecting nonprofits
+                        with local volunteers and service organizations.</li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <img src="images/ecc-logo.webp" class="footer-logo" alt="Eagleton Chamber of Commerce Logo">
+        <p>Eagleton Chamber of Commerce<br>130 Hilma Road<br>Eagleton, Utah 84005</p>
+        <p>info@ecc.org<br>(801)-555-5555<br><br>Location Map</p>
+        <nav class="social-links">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.webp"
+                            class="facebook" alt="facebook logo links to their website"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.webp"
+                            class="linkedin" alt="linkedin logo links to their website"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.webp"
+                            class="instagram" alt="instagram logo links to their website"></a></li>
+            </ul>
+        </nav>
+        <p>&copy;<span id="currentYear"></span> ECC | Matthew Schmitt | WDD 230 Project</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
