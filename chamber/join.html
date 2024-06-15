@@ -46,8 +46,8 @@
         </label>
     </header>
     <div class="wrapper">
-        <main>
-            <h1 class="joinheader">Join ECC</h1>
+        <h1 class="joinheader">Join ECC</h1>
+        <main class="form-side">
             <div id="formmessage"></div>
             <form method="get" action="thankyou.html" class="jform">
                 <fieldset>
@@ -58,11 +58,11 @@
                             pattern="^[a-zA-Z\s-]{7,}$" required></label>
                     <label for="email">Email*<input type="email" id="email" name="email" placeholder="example@gmail.com"
                             title="Please input a valid email address." required></label>
-                    <label for="phone">Phone*<input type="tel" id="phone" name="phone" placeholder="8015555555"
+                    <label for="phone">Phone*<input type="tel" id="phone" name="phone" pattern="^[0-9]{10,}$" placeholder="8015555555"
                             required></label>
                     <label for="org">Business/Organization's Name<input type="text" id="org" name="org"></label>
-                    <label for="description">Describe your Business/Organization</label>
-                    <textarea id="description" name="description" rows="8"></textarea>
+                    <label for="description">Describe your Business/Organization<textarea id="description"
+                            name="description" rows="8"></textarea></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Level</legend>
@@ -76,7 +76,7 @@
                 <input type="submit" value="Get My Membership">
             </form>
         </main>
-        <aside>
+        <aside class="member-side">
             <section class="side-gold">
                 <h2>Gold Membership</h2>
                 <h3>$600 Annually</h3>
@@ -139,7 +139,7 @@
                         channels and at community events.</li>
                 </ul>
             </section>
-            <section class="side-Nonprofit">
+            <section class="side-nonprofit">
                 <h2>Nonprofit Membership</h2>
                 <h3>There is no fee.</h3>
                 <ul>

@@ -201,11 +201,11 @@
 
     /* Discover Page */
 
-    aside {
+    .side-info, .form-side {
         grid-column: 3/6;
     }
 
-    main {
+    .discover-images, .member-side {
         grid-column: 6/11;
     }
 
@@ -224,5 +224,15 @@
 
     .discover-title::after {
         width: 30%;
+      }
+
+    /* Join Page */
+
+    .joinheader, .thanks {
+        grid-column: 1/13;
+    }
+
+    .side-gold, .side-silver, .side-bronze, .side-nonprofit {
+        margin-top: 7%;
       }
 }
