@@ -47,7 +47,7 @@ modeButton.addEventListener('change', () => {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
         menu.style.color = '#254559';
-        member.style.color = '#254559';
+        member.style.color = '#F2EBDC';
 
         facebook.src = 'images/facebook-icon.webp';
         linkedin.src = 'images/linkedin-logo.webp';
@@ -67,10 +67,10 @@ modeButton.addEventListener('change', () => {
             logo.src = 'images/ecc-logo.webp';
         });
         legends.forEach(legend => {
-            legend.style.color = '#254559';
+            legend.style.color = '#F2EBDC';
         });
         labels.forEach(label => {
-            label.style.color = '#254559';
+            label.style.color = '#F2EBDC';
         });
     }
 });
