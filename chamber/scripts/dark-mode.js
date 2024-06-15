@@ -10,7 +10,6 @@ const instagram = document.querySelector('.instagram');
 const buttons = document.querySelectorAll('.button');
 const legends = document.querySelectorAll('legend');
 const labels = document.querySelectorAll('label');
-const member = document.querySelector('.mem-select');
 
 
 modeButton.addEventListener('change', () => {
@@ -18,7 +17,6 @@ modeButton.addEventListener('change', () => {
         body.style.background = '#000';
         body.style.color = '#fff';
         menu.style.color = '#fff';
-        member.style.color = '#fff';
 
         facebook.src = 'images/facebook-icon-white.webp';
         linkedin.src = 'images/linkedin-logo-white.webp';
@@ -37,17 +35,10 @@ modeButton.addEventListener('change', () => {
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo-white.webp';
         });
-        legends.forEach(legend => {
-            legend.style.color = '#fff';
-        });
-        labels.forEach(label => {
-            label.style.color = '#fff';
-        });
     } else {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
         menu.style.color = '#254559';
-        member.style.color = '#F2EBDC';
 
         facebook.src = 'images/facebook-icon.webp';
         linkedin.src = 'images/linkedin-logo.webp';
@@ -65,12 +56,6 @@ modeButton.addEventListener('change', () => {
         });
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo.webp';
-        });
-        legends.forEach(legend => {
-            legend.style.color = '#F2EBDC';
-        });
-        labels.forEach(label => {
-            label.style.color = '#F2EBDC';
         });
     }
 });
