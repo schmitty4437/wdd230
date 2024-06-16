@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+        "familyName": "Jones",
+        "moveInDate": "",
+        "numberOfRecords": 4,
+        "visitedByBishopric": true,
+        "members": [
+            {
+                "name": "Michael Jones",
+                "gender": "male",
+                "birthdate": "1976-01-16"
+            },
+            {
+                "name": "Susan Jones",
+                "gender": "female",
+                "birthdate": "1978-06-22"
+            },
+            {
+                "name": "Sara Jones",
+                "gender": "female",
+                "birthdate": "1988-07-11"
+            },
+            {
+                "name": "George Jones",
+                "gender": "male",
+                "birthdate": "1990-05-19"
+            }
+        ]
+    }
+}
