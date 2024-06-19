@@ -1,0 +1,130 @@
+{
+    "lessons": [
+        {
+            "lessons": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://codepen.io/Matthew-Schmitt/pen/oNOJvLp",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lessons": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lessons": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/css-combinators-exercises.jpg",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Matthew-Schmitt/pen/MWRNmxX",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url": "https://codepen.io/Matthew-Schmitt/pen/MWRNoBd",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lessons": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Matthew-Schmitt/pen/BaeyYqX",
+                    "title": "Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lessons": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lessons": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP Format"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lessons": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Web Storage"
+                }
+            ]
+        },
+        {
+            "lessons": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Table"
+                },
+                {
+                    "url": "lesson08/index.html",
+                    "title": "Web Form"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lessons": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Fetch API"
+                }
+            ]
+        },
+        {
+            "lessons": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": "INSERT"
+                }
+            ]
+        }
+    ]
+}
