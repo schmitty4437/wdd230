@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "Sweetums",
+            "address": "123 S Eagle Way, Eagleton, UT 84000",
+            "phone": "801-555-5555",
+            "website": "sweetums.com",
+            "image": "",
+            "membershipLevel": "Gold Member",
+            "email": "help@sweetums.com"
+        },
+        {
+            "name": "Rent A Swag",
+            "address": "422 S Eagle Way, Eagleton, UT 84000",
+            "phone": "801-444-4444",
+            "website": "rentaswag.com",
+            "image": "",
+            "membershipLevel": "Gold Member",
+            "email": "info@swag.com"
+        },
+        {
+            "name": "Cozy's",
+            "address": "2342 S Lark Drive, Eagleton, UT 84000",
+            "phone": "801-333-3333",
+            "website": "cozys.com",
+            "image": "",
+            "membershipLevel": "Silver Member",
+            "email": "info@cozys.com"
+        },
+        {
+            "name": "Entertainment 720",
+            "address": "117 Main St, Eagleton, UT 84000",
+            "phone": "801-111-1111",
+            "website": "e720.com",
+            "image": "",
+            "membershipLevel": "Bronze Member",
+            "email": "info@e720.com"
+        },
+        {
+            "name": "Tom's Bistro",
+            "address": "677 Downtown Complex, Eagleton, UT 84000",
+            "phone": "801-222-3333",
+            "website": "tomsbistro.com",
+            "image": "",
+            "membershipLevel": "Bronze Member",
+            "email": "service@tomsbistro.com"
+        },
+        {
+            "name": "Jurassic Fork",
+            "address": "643 Downtown Complex, Eagleton, UT 84000",
+            "phone": "801-879-6666",
+            "website": "jurassicfork.com",
+            "image": "",
+            "membershipLevel": "Bronze Member",
+            "email": "service@jurassicfork.com"
+        },
+        {
+            "name": "Eagleton Ski Resort",
+            "address": "1284 Hills Ave, Eagleton, UT 84000",
+            "phone": "801-657-7777",
+            "website": "eagletonski.com",
+            "image": "",
+            "membershipLevel": "Non-profit Member",
+            "email": "help@eagletonski.com"
+        },
+        {
+            "name": "Crusty Pie Pizza",
+            "address": "1254 Hills Ave, Eagleton, UT 84000",
+            "phone": "801-657-7777",
+            "website": "crustypie.com",
+            "image": "",
+            "membershipLevel": "Non-profit Member",
+            "email": "help@crustypie.com"
+        }
+    ]
+}

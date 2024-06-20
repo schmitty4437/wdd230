@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagleton Chamber of Commerce</title>
+    <meta name="description"
+        content="This page serves as the home page of the Eagleton Chamber of Commerce where visitors, community members, and businesses can connect with on another. The page also hosts information on events, weather, and business information.">
+    <meta name="author" content="Matthew Schmitt">
+    <meta property="og:title" content="Eagleton Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schmitty4437.github.io/wdd230/images/eagle-mountain-utah.jpg">
+    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/chamber/">
+    <link rel="icon" href="favicon1.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <nav id="larger-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="link-style">Discover</a>
+            <div id="logo"><a href="index.html"><img src="images/ecc-logo.webp" alt="Eagleton Chamber of Commerce logo"
+                        width="140" height="100"></a>
+            </div>
+            <a href="directory.html" class="active link-style">Directory</a>
+            <a href="join.html" class="link-style">Join</a>
+        </nav>
+        <div id="logo-mobile"><a href="index.html"><img src="images/ecc-logo.webp"
+                    alt="Eagleton Chamber of Commerce logo"></a></div>
+        <button id="menu" title="Mobile menu button"></button>
+        <nav id="mobile-nav">
+            <a href="index.html" class="link-style">Home</a>
+            <a href="discover.html" class="link-style">Discover</a>
+            <a href="directory.html" class="active link-style">Directory</a>
+            <a href="join.html" class="link-style">Join</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            Dark Mode
+        </label>
+
+    </header>
+    <main>
+        <h1>Member Directory</h1>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <img src="images/ecc-logo.webp" class="footer-logo" alt="Eagleton Chamber of Commerce Logo">
+        <p>Eagleton Chamber of Commerce<br>130 Hilma Road<br>Eagleton, Utah 84005</p>
+        <p>info@ecc.org<br>(801)-555-5555<br><br>Location Map</p>
+        <nav class="social-links">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.webp"
+                            class="facebook" alt="facebook logo links to their website"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.webp"
+                            class="linkedin" alt="linkedin logo links to their website"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.webp"
+                            class="instagram" alt="instagram logo links to their website"></a></li>
+            </ul>
+        </nav>
+        <p>&copy;<span id="currentYear"></span> ECC | Matthew Schmitt | WDD 230 Project</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
