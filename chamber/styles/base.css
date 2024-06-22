@@ -333,7 +333,7 @@ footer p {
   padding: 3rem;
 }
 
-.side-events, .side-facts, .side-attractions, .side-news, .side-gold, .side-silver, .side-bronze, .side-nonprofit, #cards section {
+.side-events, .side-facts, .side-attractions, .side-news, .side-gold, .side-silver, .side-bronze, .side-nonprofit {
   border: 3px solid var(--accent3-color);
   border-radius: 1rem;
 }
@@ -491,11 +491,6 @@ aside ul li:before {
 
 
 /* Directory page */
-#cards img {
-  display: block;
-  margin: auto;
-}
-
 #cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -506,16 +501,35 @@ aside ul li:before {
   padding: 1rem; 
 }
 
+#cards section {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color: var(--accent1-color);
+}
+
+#cards section h2, #cards section h3, #cards section a {
+  color: var(--accent1-color);
+}
+
+#cards section a:hover {
+  color: var(--accent2-color);
+}
+
 #cards section img {
+  display: block;
   margin: auto;
   border-radius: 2rem;
   max-width: 100%;
   height: auto;
-  box-shadow: 1px 10px 20px 1px;
 }
 
 #cards section {
   padding: 2rem 0;
+}
+
+#cards h3, #cards p {
+  text-align: center;
+  padding-bottom: 0.8rem;
 }
 
 
