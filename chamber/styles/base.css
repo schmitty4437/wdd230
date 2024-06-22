@@ -338,7 +338,7 @@ footer p {
   border-radius: 1rem;
 }
 
-.side-events, .side-facts, .side-attractions, .side-news, #cards section {
+.side-events, .side-facts, .side-attractions, .side-news {
   margin: 2rem;
 }
 
@@ -490,10 +490,32 @@ aside ul li:before {
 
 
 
-/* Join page */
+/* Directory page */
 #cards img {
   display: block;
   margin: auto;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 80%; 
+  margin: 0 auto; 
+  padding: 1rem; 
+}
+
+#cards section img {
+  margin: auto;
+  border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 1px 10px 20px 1px;
+}
+
+#cards section {
+  padding: 2rem 0;
 }
 
 
