@@ -5,7 +5,6 @@ async function getMembers() {
     const response = await fetch(url);
     const data = await response.json();
 
-    // console.table(data.members);
     displayMembers(data.members);
 }
 
@@ -54,27 +53,25 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#cards");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
+	
 	display.classList.add("grid");
 	display.classList.remove("list");
 
-    gridbutton.style.background = '#F26A4B';
+    gridbutton.style.background = '#F29849';
     gridbutton.style.color = '#000';
 
     listbutton.style.background = '#254559';
     listbutton.style.color = '#F2EBDC';
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList); 
 
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 
-    listbutton.style.background = '#F26A4B';
+    listbutton.style.background = '#F29849';
     listbutton.style.color = '#000';
 
     gridbutton.style.background = '#254559';

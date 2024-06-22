@@ -520,7 +520,7 @@ aside ul li:before {
 }
 
 #grid:hover, #list:hover {
-  background-color: var(--accent3-color);
+  background-color: var(--accent2-color);
   color: #000;
 }
 
