@@ -519,6 +519,11 @@ aside ul li:before {
   margin: 0 1rem;
 }
 
+#grid:hover, #list:hover {
+  background-color: var(--accent3-color);
+  color: #000;
+}
+
 #cards section h2, #cards section h3, #cards section a {
   color: var(--accent1-color);
 }

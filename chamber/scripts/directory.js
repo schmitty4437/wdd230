@@ -60,6 +60,12 @@ gridbutton.addEventListener("click", () => {
 	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
+
+    gridbutton.style.background = '#F26A4B';
+    gridbutton.style.color = '#000';
+
+    listbutton.style.background = '#254559';
+    listbutton.style.color = '#F2EBDC';
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
@@ -67,4 +73,10 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+
+    listbutton.style.background = '#F26A4B';
+    listbutton.style.color = '#000';
+
+    gridbutton.style.background = '#254559';
+    gridbutton.style.color = '#F2EBDC';
 }
