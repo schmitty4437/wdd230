@@ -495,7 +495,7 @@ aside ul li:before {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   column-gap: 2rem;
   row-gap: 2rem;
-  max-width: 80%; 
+  max-width: 70%; 
   margin: 0 auto; 
   padding: 1rem; 
 }
