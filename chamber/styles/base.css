@@ -507,6 +507,19 @@ aside ul li:before {
   color: var(--accent1-color);
 }
 
+.menu {
+  text-align: center;
+}
+
+#grid, #list {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 0 1rem;
+}
+
 #cards section h2, #cards section h3, #cards section a {
   color: var(--accent1-color);
 }
@@ -531,6 +544,25 @@ aside ul li:before {
   text-align: center;
   padding-bottom: 0.8rem;
 }
+
+#cards.list {
+	display: flex;
+	flex-direction: column;
+  max-width: 800px;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+#cards.list section img {
+	display: none; /* smaller viewports only */
+}
+
+
 
 
 @media screen and (max-width: 400px) {
