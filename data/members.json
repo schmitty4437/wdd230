@@ -5,7 +5,8 @@
             "address": "123 S Eagle Way, Eagleton, UT 84000",
             "phone": "801-555-5555",
             "website": "sweetums.com",
-            "image": "",
+            "image": "sweetums-350-350.webp",
+            "alt": "Image of Sweetums sugary products",
             "membershipLevel": "Gold Member",
             "email": "help@sweetums.com"
         },
@@ -14,7 +15,8 @@
             "address": "422 S Eagle Way, Eagleton, UT 84000",
             "phone": "801-444-4444",
             "website": "rentaswag.com",
-            "image": "",
+            "image": "rent-a-swag-350-350.webp",
+            "alt": "Promotional image of man in suit for Rent a Swag",
             "membershipLevel": "Gold Member",
             "email": "info@swag.com"
         },
@@ -23,7 +25,8 @@
             "address": "2342 S Lark Drive, Eagleton, UT 84000",
             "phone": "801-333-3333",
             "website": "cozys.com",
-            "image": "",
+            "image": "cozys-350-350.webp",
+            "alt": "Duke playing sax at Cozy's",
             "membershipLevel": "Silver Member",
             "email": "info@cozys.com"
         },
@@ -32,7 +35,8 @@
             "address": "117 Main St, Eagleton, UT 84000",
             "phone": "801-111-1111",
             "website": "e720.com",
-            "image": "",
+            "image": "entertainment-20.webp",
+            "alt": "Logo for Entertaiment 720",
             "membershipLevel": "Bronze Member",
             "email": "info@e720.com"
         },
@@ -41,7 +45,8 @@
             "address": "677 Downtown Complex, Eagleton, UT 84000",
             "phone": "801-222-3333",
             "website": "tomsbistro.com",
-            "image": "",
+            "image": "toms-bistro.webp",
+            "alt": "Logo for Tom's Bistro",
             "membershipLevel": "Bronze Member",
             "email": "service@tomsbistro.com"
         },
@@ -50,7 +55,8 @@
             "address": "643 Downtown Complex, Eagleton, UT 84000",
             "phone": "801-879-6666",
             "website": "jurassicfork.com",
-            "image": "",
+            "image": "jurassic-fork-350.webp",
+            "alt": "Dinosaur logo for Jurassic Fork restaurant",
             "membershipLevel": "Bronze Member",
             "email": "service@jurassicfork.com"
         },
@@ -59,7 +65,8 @@
             "address": "1284 Hills Ave, Eagleton, UT 84000",
             "phone": "801-657-7777",
             "website": "eagletonski.com",
-            "image": "",
+            "image": "eagleton-ski-resort-logo.webp",
+            "alt": "Triangle logo with mountains and flying eagle for Eagleton Ski Resort",
             "membershipLevel": "Non-profit Member",
             "email": "help@eagletonski.com"
         },
@@ -68,7 +75,8 @@
             "address": "1254 Hills Ave, Eagleton, UT 84000",
             "phone": "801-657-7777",
             "website": "crustypie.com",
-            "image": "",
+            "image": "crusty-pizza.webp",
+            "alt": "Crusty Pizza logo",
             "membershipLevel": "Non-profit Member",
             "email": "help@crustypie.com"
         }
