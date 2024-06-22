@@ -259,7 +259,7 @@ footer {
 }
 
 footer p {
-    font-size: 1em;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .footer-logo {
@@ -559,7 +559,7 @@ aside ul li:before {
 }
 
 #cards.list section img {
-	display: none; /* smaller viewports only */
+	display: none;
 }
 
 
