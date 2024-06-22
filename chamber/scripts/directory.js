@@ -1,4 +1,4 @@
-const url = 'https://schmitty4437.github.io/wdd230/data/directory.json';
+const url = 'https://schmitty4437.github.io/wdd230/data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMembers() {
@@ -17,10 +17,10 @@ const displayMembers = (members) => {
         let membership = document.createElement("h3");
         let address = document.createElement("p");
         let phone = document.createElement("p");
-        let websites = member.websites.map(website => `<a href="${website.website}" target="_blak">${website.website}</a>`);
+        let website = document.createElement("p");
         let email = document.createElement("p");
 
-        image.setAttribute('src', member.image);
+        image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', member.alt);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '350');
@@ -30,16 +30,15 @@ const displayMembers = (members) => {
         membership.textContent = member.membershipLevel;
         address.textContent = member.address;
         phone.textContent = member.phone;
+        website.innerHTML = `<a href="http://${member.website}" target="_blank">${member.website}</a>`;
         email.textContent = member.email;
-        
-
-        
 
         card.append(image);
         card.append(name);
+        card.append(membership)
         card.append(address);
         card.append(phone);
-        card.append(websites);
+        card.append(website);
         card.append(email);
 
         cards.appendChild(card);

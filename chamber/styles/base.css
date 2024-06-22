@@ -333,12 +333,12 @@ footer p {
   padding: 3rem;
 }
 
-.side-events, .side-facts, .side-attractions, .side-news, .side-gold, .side-silver, .side-bronze, .side-nonprofit {
+.side-events, .side-facts, .side-attractions, .side-news, .side-gold, .side-silver, .side-bronze, .side-nonprofit, #cards section {
   border: 3px solid var(--accent3-color);
   border-radius: 1rem;
 }
 
-.side-events, .side-facts, .side-attractions, .side-news {
+.side-events, .side-facts, .side-attractions, .side-news, #cards section {
   margin: 2rem;
 }
 
@@ -361,12 +361,12 @@ figcaption {
   margin: .5rem 0 2rem 0;
 }
 
-.discover-title {
+.discover-title, .directory-title {
   text-align: center;
   position: relative
 }
 
-.discover-title::after {
+.discover-title::after, .directory-title::after {
   content:"";
   display: block;
   width: 50%;
@@ -487,6 +487,15 @@ aside ul li:before {
   color: var(--accent2-color);
   padding-right: 5px;
 }
+
+
+
+/* Join page */
+#cards img {
+  display: block;
+  margin: auto;
+}
+
 
 @media screen and (max-width: 400px) {
   .large, .medium {
