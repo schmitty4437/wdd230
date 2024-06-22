@@ -398,7 +398,7 @@ form {
 
 .jform div {
   padding-top: 1rem;
-  color: var (--accent1-color);
+  color: var(--accent1-color);
 }
 
 .jform input[type="text"],
