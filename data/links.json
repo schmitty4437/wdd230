@@ -121,8 +121,8 @@
             "lessons": "10",
             "links": [
                 {
-                    "url": "",
-                    "title": "INSERT"
+                    "url": "lesson10/weather.html",
+                    "title": "Weather API"
                 }
             ]
         }
