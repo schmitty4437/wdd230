@@ -15,7 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(banner);
     
     const closeButton = document.getElementById('closeBanner');
-    closeButton.addEventListener('click', function() {
+    if (closeButton) {
+        closeButton.addEventListener('click', function() {
+            banner.style.display = 'none';
+        });
+    }
+    
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+        banner.style.display = 'block';
+    } else {
         banner.style.display = 'none';
-    });
+    }
 });
