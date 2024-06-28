@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner = document.createElement('div');
     banner.id = 'banner';
     banner.innerHTML = `
-        <p>Attend the Chamber of Commerce meet and greet today at 7:00 p.m.</p>
+        <p>Attend the Chamber of Commerce meet and greet Wednesday at 7:00 p.m.</p>
         <button id="closeBanner">&times;</button>
     `;
     
