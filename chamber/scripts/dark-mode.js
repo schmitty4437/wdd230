@@ -10,6 +10,7 @@ const instagram = document.querySelector('.instagram');
 const buttons = document.querySelectorAll('.button');
 const legends = document.querySelectorAll('legend');
 const labels = document.querySelectorAll('label');
+const heroHeading = document.querySelector('.herolabel h1');
 
 
 modeButton.addEventListener('change', () => {
@@ -35,6 +36,9 @@ modeButton.addEventListener('change', () => {
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo-white.webp';
         });
+        if (heroHeading) {
+            heroHeading.style.color = '#fff'; 
+        }
     } else {
         body.style.background = '#F2EBDC';
         body.style.color = '#000';
@@ -57,5 +61,8 @@ modeButton.addEventListener('change', () => {
         logos.forEach(logo => {
             logo.src = 'images/ecc-logo.webp';
         });
+        if (heroHeading) {
+            heroHeading.style.color = '#F29849';
+        }
     }
 });
