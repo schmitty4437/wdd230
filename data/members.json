@@ -47,7 +47,7 @@
             "website": "tomsbistro.com",
             "image": "toms-bistro.webp",
             "alt": "Logo for Tom's Bistro",
-            "membershipLevel": "Bronze Member",
+            "membershipLevel": "Gold Member",
             "email": "service@tomsbistro.com"
         },
         {
@@ -77,7 +77,7 @@
             "website": "crustypie.com",
             "image": "crusty-pizza.webp",
             "alt": "Crusty Pizza logo",
-            "membershipLevel": "Non-profit Member",
+            "membershipLevel": "Silver Member",
             "email": "help@crustypie.com"
         }
     ]
