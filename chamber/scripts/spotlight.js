@@ -1,15 +1,10 @@
-const spotlightUrl = 'https://schmitty4437.github.io/wdd230/data/members.json';
+const url = 'https://schmitty4437.github.io/wdd230/data/members.json';
 const spotsContainer = document.querySelector('#spots');
 
-async function getSpotlightMembers() {
-    try {
-        const response = await fetch(spotlightUrl);
-        if (!response.ok) throw new Error('Network response was not ok');
-        const data = await response.json();
-        displayRandomMembers(data.members);
-    } catch (error) {
-        console.error("Fetching error: ", error);
-    }
+async function getMembers() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayRandomMembers(data.members);
 }
 
 const displayRandomMembers = (members) => {
@@ -18,17 +13,11 @@ const displayRandomMembers = (members) => {
         member.membershipLevel === 'Gold Member' || member.membershipLevel === 'Silver Member'
     );
 
-    // Shuffle the filtered members array
-    const shuffledMembers = shuffleArray(filteredMembers);
+    // Shuffle the array and pick the first three members
+    const shuffledMembers = shuffleArray(filteredMembers).slice(0, 3);
 
-    // Select up to 3 members from the shuffled list
-    const selectedMembers = shuffledMembers.slice(0, 3);
-
-    // Clear any existing content in the container
-    spotsContainer.innerHTML = '';
-
-    // Display the selected members
-    selectedMembers.forEach(member => {
+    // Display the members
+    shuffledMembers.forEach(member => {
         let card = document.createElement("section");
         let image = document.createElement("img");
         let name = document.createElement("h2");
@@ -53,7 +42,7 @@ const displayRandomMembers = (members) => {
 
         card.append(image);
         card.append(name);
-        card.append(membership);
+        card.append(membership)
         card.append(address);
         card.append(phone);
         card.append(website);
@@ -63,7 +52,6 @@ const displayRandomMembers = (members) => {
     });
 }
 
-// Function to shuffle an array
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -72,4 +60,4 @@ const shuffleArray = (array) => {
     return array;
 }
 
-getSpotlightMembers();
+getMembers();
