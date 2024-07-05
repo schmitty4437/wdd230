@@ -684,26 +684,12 @@ aside ul li:before {
 }
 
 #spots {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-}
-
-#spots section {
-  width: 100%; /* Ensure sections take full width */
+  padding-top: 4rem;
   text-align: center;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  margin-bottom: 20px; /* Space between items */
 }
 
-#spots img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  border-radius: 5px;
+.company {
+  margin-bottom: 2rem;
 }
 }
 
