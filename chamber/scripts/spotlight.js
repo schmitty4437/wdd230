@@ -27,31 +27,37 @@ const displayRandomMembers = (members) => {
     spotsContainer.innerHTML = '';
 
     shuffledMembers.forEach(member => {
-        let card = document.createElement("section");
-        let image = document.createElement("img");
-        let name = document.createElement("h2");
-        let membership = document.createElement("h3");
-        let address = document.createElement("p");
-        let phone = document.createElement("p");
-        let website = document.createElement("p");
-        let email = document.createElement("p");
+        let card = document.createElement("div"); // Use <div> for grid item
+        card.classList.add('spot-item'); // Add a class for styling
 
+        let image = document.createElement("img");
         image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', member.alt);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '350');
         image.setAttribute('height', '350');
 
+        let name = document.createElement("h2");
         name.textContent = member.name;
+
+        let membership = document.createElement("h3");
         membership.textContent = member.membershipLevel;
+
+        let address = document.createElement("p");
         address.textContent = member.address;
+
+        let phone = document.createElement("p");
         phone.textContent = member.phone;
+
+        let website = document.createElement("p");
         website.innerHTML = `<a href="http://${member.website}" target="_blank">${member.website}</a>`;
+
+        let email = document.createElement("p");
         email.textContent = member.email;
 
         card.append(image);
         card.append(name);
-        card.append(membership)
+        card.append(membership);
         card.append(address);
         card.append(phone);
         card.append(website);
@@ -60,7 +66,7 @@ const displayRandomMembers = (members) => {
         spotsContainer.appendChild(card);
     });
 
-    // console.log("Members displayed");
+    console.log("Members displayed");
 }
 
 const shuffleArray = (array) => {

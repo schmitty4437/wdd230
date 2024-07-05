@@ -682,6 +682,29 @@ aside ul li:before {
     padding: 15px;
     font-size: 14px; 
 }
+
+#spots {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+#spots section {
+  width: 100%; /* Ensure sections take full width */
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px; /* Space between items */
+}
+
+#spots img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -698,33 +721,4 @@ aside ul li:before {
       padding: 1rem;
   }
 
-}
-
-
-#spots {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-#spots section {
-  box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-#spots img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-  #spots {
-      grid-template-columns: 1fr;
-  }
 }

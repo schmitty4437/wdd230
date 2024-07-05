@@ -64,7 +64,7 @@
         justify-items: space-between;
     } */
 
-    #events, #company-spot, .card {
+    #events, .card {
         max-width: 80%;
         margin: 0 auto;
     }
@@ -120,7 +120,7 @@
         padding-bottom: 2rem;
     }
 
-    #company-spot {
+    /* #company-spot {
         grid-template-columns: repeat(10, 1fr);
     }
 
@@ -134,7 +134,7 @@
 
     .company3 {
         grid-column: 8/11;
-    }
+    } */
 
     .card #weather  {
         grid-column: 3/4;

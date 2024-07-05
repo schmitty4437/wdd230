@@ -36,4 +36,28 @@
     #events p {
         margin-bottom: 2rem;
     }
+
+    #spots {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px;
+        justify-content: center; /* Center the grid horizontally */
+    }
+
+    #spots section {
+        width: 100%; /* Ensure sections take full width */
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    #spots img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 5px;
+    }
 }
+
