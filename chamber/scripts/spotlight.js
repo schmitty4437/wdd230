@@ -6,7 +6,7 @@ async function getSpotlightMembers() {
         const response = await fetch(spotlightUrl);
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
-        console.log("Fetched data:", data); // Check if data is fetched correctly
+        console.log("Fetched data:", data);
         displayRandomMembers(data.members);
     } catch (error) {
         console.error("Fetching error: ", error);
@@ -14,22 +14,18 @@ async function getSpotlightMembers() {
 }
 
 const displayRandomMembers = (members) => {
-    // Filter members with Gold or Silver membership
     const filteredMembers = members.filter(member => 
         member.membershipLevel === 'Gold Member' || member.membershipLevel === 'Silver Member'
     );
 
-    console.log("Filtered members:", filteredMembers); // Check if filtering works
+    console.log("Filtered members:", filteredMembers); 
 
-    // Shuffle the array and pick the first three members
     const shuffledMembers = shuffleArray(filteredMembers).slice(0, 3);
 
-    console.log("Shuffled members:", shuffledMembers); // Check if shuffling and slicing works
+    console.log("Shuffled members:", shuffledMembers); 
 
-    // Clear any existing content in the container
     spotsContainer.innerHTML = '';
 
-    // Display the members
     shuffledMembers.forEach(member => {
         let card = document.createElement("section");
         let image = document.createElement("img");
@@ -64,7 +60,7 @@ const displayRandomMembers = (members) => {
         spotsContainer.appendChild(card);
     });
 
-    console.log("Members displayed"); // Check if members are appended to DOM
+    // console.log("Members displayed");
 }
 
 const shuffleArray = (array) => {
