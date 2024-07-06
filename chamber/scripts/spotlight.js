@@ -27,8 +27,8 @@ const displayRandomMembers = (members) => {
     spotsContainer.innerHTML = '';
 
     shuffledMembers.forEach(member => {
-        let card = document.createElement("div"); // Use <div> for grid item
-        card.classList.add('spot-item'); // Add a class for styling
+        let card = document.createElement("div"); 
+        card.classList.add('spot-item'); 
 
         let image = document.createElement("img");
         image.setAttribute('src', `images/${member.image}`);

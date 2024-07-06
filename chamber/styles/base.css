@@ -489,7 +489,11 @@ aside ul li:before {
   box-sizing: border-box;
 }
 
-#cards section {
+#company-spot h2 {
+  margin-top: 4rem;
+}
+
+#cards section, #spots {
   background-color: var(--primary-color);
   border-radius: 1rem;
   color: var(--accent1-color);
@@ -515,11 +519,11 @@ aside ul li:before {
   color: #000;
 }
 
-#cards section h2, #cards section h3, #cards section a {
+#cards section h2, #cards section h3, #cards section a, #spots h2, #spots h3, #spots a {
   color: var(--accent1-color);
 }
 
-#cards section a:hover {
+#cards section a:hover, #spots a:hover {
   color: var(--accent2-color);
 }
 
