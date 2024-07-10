@@ -197,6 +197,15 @@ hr {
     margin: 0 5px;
 }
 
+#card-activities a {
+    color: #00631f;
+    text-decoration: none;
+}
+
+#card-activities a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
 
 @media  screen and (min-width: 100px) {
     .herolabel {
