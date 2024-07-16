@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) {
+    header {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+        align-items: center;
+    }
+
+    .rentals {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    main {
+        grid-column: 1/-1;
+    }
+
+    #banner {
+        grid-column: 1 / -1; 
+    }
+
+    .parent-logo {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: 1/-1;
+    }
+
+    .logo {
+        grid-column: 1 / -1; 
+        justify-self: center; 
+        display: block;
+        padding: 30px 0;
+        width: 20%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .main-nav {
+        grid-column: 1 / -1; 
+        display: flex;
+        justify-content: center;
+        background: none;
+        width: auto;
+        position: inherit;
+    }
+
+    header nav {
+        grid-column: 1 / -1; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    header nav a {
+        display: inline-block;
+        padding: 15px 20px;
+        color: #00488b;
+        font-size: 1.6em;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        color: #007BFF;
+        background-color: transparent; 
+    }
+
+    .hero {
+        grid-column: 1/12;
+        margin-top: 20px;
+    }
+
+    .who {
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+    }
+    
+    .who h2 {
+        grid-column: 1 / -1;
+    }
+    
+    .scooters {
+        grid-column: 1 / 8;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .who-para {
+        grid-column: 8 / 13;
+        margin-top: 60px;
+        line-height: 1.5rem;
+    }
+    
+    .button-grid {
+        grid-column: 8 / 13;
+
+    }
+
+    .scoots {
+        grid-column: 1/2;
+    }
+
+    .rentals h2 {
+        grid-column: 1/-1;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .weather-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .weather-section h2, hr {
+        grid-column: 1/-1;
+    }
+
+    .weather-container {
+        grid-column: 1 / 2;
+    }
+
+    .forecast-container {
+        grid-column: 2 / 3;
+    }
+
+    hr {
+        width: 70%;
+        margin-top: -20px;
+    }
+}
