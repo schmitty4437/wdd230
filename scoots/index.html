@@ -11,10 +11,11 @@
     <meta property="og:title" content="Scoots Scooter Rentals">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://schmitty4437.github.io/wdd230/images/eagle-mountain-utah.jpg">
-    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/chamber/">
+    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/scoots/">
     <link rel="icon" href="images/scoots-icon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 
@@ -35,7 +36,7 @@
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/couple-on-beach-with-scooter-mobile.webp">
-                <source media="(max-width: 1199px)" srcset="">
+                <source media="(max-width: 1199px)" srcset="images/couple-on-beach-with-scooter-1199.webp">
                 <source media="(min-width: 1200px)" srcset="images/couple-on-beach-with-scooter.webp">
                 <img src="images/couple-on-beach-with-scooter.webp"
                     alt="Couple enjoying the sunset while sitting on a Scoots scooter at the beach" width="1280"
@@ -47,7 +48,12 @@
         </div>
         <section class="who">
             <h2>Who We Are</h2>
-            <img src="images/red-white-scooter-line-up.webp" class="scooters" alt="scooters" width="800" height="388">
+            <picture class="scooters">
+                <source media="(max-width: 400px)" srcset="images/red-white-scooter-line-up-350.webp">
+                <source media="(max-width: 1199px)" srcset="images/red-white-scooter-line-up-500.webp">
+                <source media="(min-width: 1200px)" srcset="images/red-white-scooter-line-up.webp">
+                <img src="images/red-white-scooter-line-up.webp" alt="scooters" width="800" height="388">
+            </picture>
             <p class="who-para">Welcome to Scoots, your premier motor scooter rental company on Cozumel island in the
                 Caribbean Sea. We
                 cater to locals, tourists, and cruise-based groups with two convenient locations near the Playa del
@@ -117,22 +123,21 @@
     </main>
     <footer>
         <div class="footer-content">
-            <a href="index.html"><img src="images/scoots-logo.webp" alt="Scoots blue and orange scooter logo"
-                    class="logo"></a>
-            <p>&copy;<span id="currentYear"></span> Scoots Motor Scooter Rentals</p>
-            <p>1234 Adventure Blvd, Cozumel, Quintana Roo, Mexico</p>
-            <p>Phone: +52 987 123 4567</p>
-            <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
-            <p>Follow us on:
-                <a href="#">Facebook</a> |
-                <a href="#">Instagram</a> |
-                <a href="#">Twitter</a>
-            </p>
+            <div id="logo">
+                <a href="index.html"><img src="images/scoots-logo.webp" alt="Scoots blue and orange scooter logo"></a>
+            </div>
+            <div id="footer-info">
+                <p>&copy;<span id="currentYear"></span> Scoots Motor Scooter Rentals</p>
+                <p>1234 Adventure Blvd, Cozumel, Quintana Roo, Mexico</p>
+                <p>Phone: +52 987 123 4567</p>
+                <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
+            </div>
         </div>
         <div class="footer-note">
-            <p>Matthew Schmitt | WDD 230 Final Project</p>
+            <p>Matthew Schmitt | WDD 230 Final Project | Attribution</p>
         </div>
     </footer>
+    
     <script src="scripts/weather.js"></script>
     <script src="scripts/responsive-menu.js"></script>
 </body>
