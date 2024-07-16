@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Motor Scooter Rentals</title>
+    <title>Contact Scoots Motor Scooter Rentals</title>
     <meta name="description"
-        content="Scoots is a motor scooter rental company in Cozumel, Mexico, offering friendly services for scooters, jeeps, and ATVs. Perfect for tourists and cruise passengers, with locations near the ferry dock and Terminal Puerta Maya. Explore Cozumel with ease and excitement!">
+        content="Get in contact with Scoots to get your questions answered about renting a scooter, ATV, or Jeep on your next visit to Cozumel.">
     <meta name="author" content="Matthew Schmitt">
     <meta property="og:title" content="Scoots Scooter Rentals">
     <meta property="og:type" content="website">
@@ -47,7 +47,29 @@
             </div>
         </div> -->
         <h1>Contact Us</h1>
-        
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3737.7042000730307!2d-86.97725547416903!3d20.47733895648829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1721160865576!5m2!1sen!2sus"
+                width="400" height="600" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <iframe src="https://www.google.com/maps/d/embed?mid=1xxJe9jCFb7Dw3EHAGITB-f54cEXHET0&ehbc=2E312F" width="640" height="480" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="formmessage"></div>
+        <form method="get" action="thankyou.html" class="cform">
+            <fieldset>
+                <legend>Questions?</legend>
+                <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
+                <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label for="email">Email*<input type="email" id="email" name="email" placeholder="example@gmail.com"
+                        title="Please input a valid email address." required></label>
+                <label for="description">Describe your Business/Organization<textarea id="description"
+                        name="description" rows="8"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="time" id="time">
+            <input type="submit" value="Send My Question">
+        </form>
     </main>
     <footer>
         <div class="footer-content">
