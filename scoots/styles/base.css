@@ -65,6 +65,10 @@ p {
     background-color: #00488b;
 }
 
+header {
+    display: grid;
+}
+
 header nav a {
     display: none;
     text-align: center;
@@ -135,9 +139,8 @@ header nav a:hover {
 }
 
 .weather-container, .forecast-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid; /* Changed to grid for layout */
+    justify-items: center; /* Center items */
     text-align: center;
 }
 
@@ -238,6 +241,21 @@ footer {
 
 @media screen and (max-width: 400px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Use single column layout */
+    }
+
+    .weather-container,
+    .forecast-container {
+        grid-column: 1 / -1; /* Ensure full width */
+        flex-direction: column; /* Stack vertically */
+        text-align: center; /* Center text */
+    }
+
+    .button-grid {
+        grid-column: 1 / -1; /* Center button grid */
+    }
+
+    footer {
+        grid-column: 1 / -1; /* Full width footer */
     }
 }
