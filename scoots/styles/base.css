@@ -9,7 +9,7 @@
 }
 
 body {
-    max-width: 1260px;
+    max-width: 1280px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -128,6 +128,11 @@ p {
     background-color: #007BFF;
 }
 
+.who img {
+    width: 100%;
+    height: auto;
+}
+
 .weather-container span,
 .weather-container figcaption,
 .forecast-container figure p {
@@ -138,7 +143,7 @@ p {
 
 .weather-container, .forecast-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column; /* This ensures vertical alignment */
     text-align: center;
@@ -231,7 +236,30 @@ p {
     margin: auto;
 }
 
+.social-container {
+    text-align: center;
+}
+
+.social-container h2 {
+    margin-bottom: 20px;
+}
+
+.social-container a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.social-container a:hover {
+    opacity: .5;
+}
+
 footer {
+    display: grid;
     margin-top: 60px;
     border-top: 6px solid var(--primary-color);
     text-align: center;
