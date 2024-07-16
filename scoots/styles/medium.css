@@ -14,4 +14,8 @@
     .who-para {
         padding: 20px 40px;
     }
+
+    body {
+        grid-template-columns: 1fr;
+    } 
   }
