@@ -1,21 +1,8 @@
 @media screen and (min-width: 401px) and (max-width: 768px) {
-    .scooters {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .scooters img {
-        max-width: 500px;
-        /* width: 100%; */
-        height: auto;
+    .rentals p {
+        width: 100%;
+        max-width: 350px;
         margin: 0 auto;
+        padding-bottom: 60px;
     }
-
-    .who-para {
-        padding: 20px 40px;
-    }
-
-    body {
-        grid-template-columns: 1fr;
-    } 
-  }
+}

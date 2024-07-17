@@ -9,19 +9,21 @@
 }
 
 body {
-
-    font-family: var(--paragraph-font);
-}
-
-.wrapper {
+    max-width: 1280px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     text-align: center;
     padding-top: 20px;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    padding: 0 30px;
 }
 
 .logo {
@@ -85,17 +87,23 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
   }
 
-.hero-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+.hero {
+    position: relative;
 }
 
-.hero-img picture, .hero-img img {
+.hero img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
+    float: right;
+    margin-bottom: 30px;
+  }
+
+  .herolabel {
+	position: absolute;
+	padding: 0 1rem;
+    text-align: center;
+    color: #00488b;
 }
 
 .button-grid {

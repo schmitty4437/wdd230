@@ -3,16 +3,16 @@
     --secondary-color: #007BFF;
     --accent1-color: #ff9400;
     --accent2-color: #f9c74f;
+    --accent3-color: #fff;
   
     --heading-font: "Merriweather", serif;
     --paragraph-font: "Robot", sans-serif;
 }
 
 body {
-    max-width: 1280px;
+    max-width: 1260px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    font-family: var(--paragraph-font);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,9 +21,37 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 20px;
 }
 
-p {
-    font-family: var(--paragraph-font);
-    padding: 0 30px;
+#banner {
+    background-color: #f9c74f;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+    height: 20px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+#banner.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#banner p {
+    margin: 0;
+}
+
+#banner button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .logo {
@@ -91,7 +119,7 @@ p {
     position: relative;
 }
 
-.hero img {
+.hero img, .who img {
     display: block;
     width: 100%;
     height: auto;
@@ -104,6 +132,10 @@ p {
 	padding: 0 1rem;
     text-align: center;
     color: #00488b;
+}
+
+.who p, .rentals p, .contact-para p, .map p {
+    padding: 0 30px;
 }
 
 .button-grid {
@@ -131,13 +163,24 @@ p {
     background-color: #007BFF;
 }
 
-.who img {
-    width: 100%;
-    height: auto;
+.rentals {
+    background-color: var(--primary-color);
+    padding: 30px 0;
 }
 
-.info {
-    margin-top: 40px;
+.rentals img{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    width: 100%;
+}
+
+.rentals p, .rentals h2, .rentals h3 {
+    color: var(--accent3-color);
+}
+
+.rentals p, .contact-para {
+    padding-bottom: 30px;
 }
 
 .weather-container span,
@@ -150,9 +193,8 @@ p {
 
 .weather-container, .forecast-container {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    flex-direction: column; /* This ensures vertical alignment */
+    flex-direction: column; 
     text-align: center;
 }
 
@@ -165,7 +207,7 @@ p {
     padding: 20px;
     border: 4px solid var(--accent2-color);
     border-radius: 5px;
-    text-align: center; /* Center-align text within the section */
+    text-align: center;
 }
 
 #weather hr {
@@ -174,15 +216,13 @@ p {
 
 .forecast-day {
     margin-top: 10px;
-    /* text-align: center; */
 }
 
-/* Additional styling for figure elements inside weather-container */
 .weather-container figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* This ensures vertical alignment */
+    flex-direction: column;
 }
 
 .weather-container img {
@@ -192,65 +232,6 @@ p {
 .weather-container span,
 .weather-container figcaption {
     margin-top: 5px;
-}
-
-
-#banner {
-    background-color: #f9c74f;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    font-size: 1.2rem;
-    height: 20px;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 1;
-    visibility: visible;
-}
-
-#banner.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#banner p {
-    margin: 0;
-}
-
-#banner button {
-    background: none;
-    border: none;
-    font-size: 30px;
-    font-weight: 700;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.scooters {
-    display: flex;
-    justify-content: center;
-}
-
-.scooters img {
-    max-width: 100%;
-    height: auto;
-}
-
-.rentals {
-    background-color: #00488b;
-    padding: 30px 0;
-}
-
-.rentals p, .rentals h2, .rentals h3 {
-    color: #fff;
-    padding-bottom: 20px;
-}
-
-.rentals img {
-    display: block;
-    margin: auto;
 }
 
 .social-container {
@@ -286,16 +267,102 @@ footer {
     margin-top: 30px;
 }
 
+/* contact form */
+form {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2.8rem;
+    color: var(--accent3-color);
+}
+
+.cform {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cform fieldset {
+    margin: 2rem 0;
+    border: 2px solid var(--accent3-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.cform legend {
+    color: var(--accent3-color);
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+.cform label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent3-color);
+    font-size: 1rem;
+}
+
+.cform input[type="text"],
+.cform input[type="email"],
+.cform textarea {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--accent3-color);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--primary-color);
+    appearance: none;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 400px) {
-    .scooters img {
-        max-width: 350px;
-        margin: 0 auto;
+    .cform input[type="text"],
+    .cform input[type="email"],
+    .cform textarea {
+        max-width: 400px;
     }
-  }
+}
 
+.cform input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent1-color), var(--accent2-color));
+    color: var(--accent3-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 1px 1px 4px #999;
+}
 
-@media screen and (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-    }  
-  }
+.cform input[type="submit"]:hover {
+    background: var(--nav-hover-link-color);
+    color: #000;
+}
+
+.cform input:required {
+    border-left: 8px solid #ff5050;
+}
+
+.cform input:required:valid {
+    border-left: 8px solid #008000;
+}
+
+  
+.map {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 3;
+}
+
+.map h3,
+.map p {
+    text-align: center;
+}

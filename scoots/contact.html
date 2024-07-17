@@ -14,9 +14,9 @@
     <meta property="og:url" content="https://schmitty4437.github.io/wdd230/scoots/">
     <link rel="icon" href="images/scoots-icon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base2.css">
-    <!-- <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
@@ -34,55 +34,64 @@
     </header>
     <main>
         <div class="hero">
-            <picture>
+            <picture class="hero-img">
                 <source media="(max-width: 400px)" srcset="images/atvs-riding-along-path-mobile.webp">
                 <source media="(max-width: 1199px)" srcset="images/atvs-riding-along-path-1199.webp">
                 <source media="(min-width: 1200px)" srcset="images/atvs-riding-along-path.webp">
-                <img src="images/atvs-riding-along-path.webp"
-                    alt="Group of people enjoying their ATVs from Scoots." width="1280"
-                    height="640">
+                <img src="images/atvs-riding-along-path.webp" alt="Group of people enjoying their ATVs from Scoots."
+                    width="1280" height="640">
             </picture>
         </div>
-        <h1>Contact Us</h1>
-        <div class="contact-para">
-            <p>Welcome to Scoots! We're thrilled to assist you with all your rental needs and answer any questions you
-                may have. Whether you're planning your adventure ahead of time or need information on the go, our team
-                is here to help. Reach out to us for inquiries about our motor scooters, jeeps, and side-by-sides ATVs,
-                or if you need assistance with the rental process. We value your feedback and are committed to making
-                your experience with Scoots as smooth and enjoyable as possible. Feel free to contact us through the
-                form below, or visit us at one of our convenient locations on Cozumel. We look forward to hearing from
-                you!</p>
-        </div>
-        <div id="formmessage"></div>
-        <form method="get" action="thankyou.html" class="cform">
-            <fieldset>
-                <legend>Questions?</legend>
-                <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
-                <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
-                <label for="email">Email*<input type="email" id="email" name="email" placeholder="example@gmail.com"
-                        title="Please input a valid email address." required></label>
-                <label for="description">Describe your Business/Organization<textarea id="description"
-                        name="description" rows="8"></textarea></label>
-            </fieldset>
-            <input type="hidden" name="time" id="time">
-            <input type="submit" value="Send My Question">
-        </form>
-        <div class="map">
-            <h3>Scoots Playa del Carmen</h3>
-            <p>Av Benito Juárez 239, Centro, 77710 Playa del Carmen, Q.R., Mexico</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169028.52454379742!2d-87.14304943670359!3d20.58650581405787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e430a3b3c73db%3A0xf1147cfcfa9097b6!2sFerry%20Cozumel!5e0!3m2!1sen!2sus!4v1721163271253!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="map">
-            <h3>Scoots Playa del Carmen</h3>
-            <p>Av Benito Juárez 239, Centro, 77710 Quintana Roo, Mexico</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.733795477506!2d-86.97725547416907!3d20.476124056528967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e574915f5accd%3A0xc8f310e1602b6808!2sSeaport%20-%20Puerta%20Maya!5e0!3m2!1sen!2sus!4v1721163429215!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-para">
+                <p>Welcome to Scoots! We're thrilled to assist you with all your rental needs and answer any questions
+                    you
+                    may have. Whether you're planning your adventure ahead of time or need information on the go, our
+                    team
+                    is here to help. Reach out to us for inquiries about our motor scooters, jeeps, and side-by-sides
+                    ATVs,
+                    or if you need assistance with the rental process. We value your feedback and are committed to
+                    making
+                    your experience with Scoots as smooth and enjoyable as possible. Feel free to contact us through the
+                    form below, or visit us at one of our convenient locations on Cozumel. We look forward to hearing
+                    from
+                    you!</p>
+            </div>
+            <div id="formmessage"></div>
+            <form method="get" action="thankyou.html" class="cform">
+                <fieldset>
+                    <legend>Questions?</legend>
+                    <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
+                    <label for="email">Email*<input type="email" id="email" name="email" placeholder="example@gmail.com"
+                            title="Please input a valid email address." required></label>
+                    <label for="description">Tell us how we can help<textarea id="description" name="description"
+                            rows="8"></textarea></label>
+                </fieldset>
+                <input type="hidden" name="time" id="time">
+                <input type="submit" value="Send My Question">
+            </form>
+        </section>
+        <section id="map-container" >
+            <h2>Our Locations</h2>
+            <div class="map">
+                <h3>Scoots Playa del Carmen</h3>
+                <p>Av Benito Juárez 239, Centro, 77710 Playa del Carmen, Q.R., Mexico</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169028.52454379742!2d-87.14304943670359!3d20.58650581405787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e430a3b3c73db%3A0xf1147cfcfa9097b6!2sFerry%20Cozumel!5e0!3m2!1sen!2sus!4v1721163271253!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map">
+                <h3>Scoots Playa del Carmen</h3>
+                <p>Av Benito Juárez 239, Centro, 77710 Quintana Roo, Mexico</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.733795477506!2d-86.97725547416907!3d20.476124056528967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e574915f5accd%3A0xc8f310e1602b6808!2sSeaport%20-%20Puerta%20Maya!5e0!3m2!1sen!2sus!4v1721163429215!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
