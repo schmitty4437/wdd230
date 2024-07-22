@@ -21,65 +21,30 @@
 
 <body>
     <header>
+        <div id="banner"></div>
         <button id="menu" title="Mobile menu button"></button>
         <a href="index.html" class="parent-logo"><img src="images/scoots-logo.webp"
                 alt="Scoots blue and orange scooter logo" class="logo"></a>
         <nav class="main-nav">
             <a href="index.html">Home</a>
-            <a href="rentals.html" class="active">Rentals</a>
+            <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
     <main>
         <div class="hero">
             <picture class="hero-img">
-                <source media="(max-width: 400px)" srcset="images/playa-del-carmen-beach-400">
-                <source media="(max-width: 1199px)" srcset="images/playa-del-carmen-beach-1199.webp">
-                <source media="(min-width: 1200px)" srcset="images/playa-del-carmen-beach-1280.webp">
-                <img src="images/playa-del-carmen-beach-1280" alt="Group of people enjoying their ATVs from Scoots."
+                <source media="(max-width: 400px)" srcset="images/atvs-riding-along-path-mobile.webp">
+                <source media="(max-width: 1199px)" srcset="images/atvs-riding-along-path-1199.webp">
+                <source media="(min-width: 1200px)" srcset="images/atvs-riding-along-path.webp">
+                <img src="images/atvs-riding-along-path.webp" alt="Group of people enjoying their ATVs from Scoots."
                     width="1280" height="640">
             </picture>
         </div>
-        <h1>Rental Prices</h1>
-        <table id="rentalTable">
-            <thead>
-                <tr>
-                    <th colspan="2"></th>
-                    <th colspan="2" class="header-span reserv-price">Reservation Price</th>
-                    <th colspan="2" class="header-span walk-price">Walk-In Price</th>
-                </tr>
-                <tr>
-                    <th>Rental Type</th>
-                    <th>Max Persons</th>
-                    <th class="half-day-header reserv-price">Half Day (3 hrs)</th>
-                    <th class="full-day-header reserv-price">Full Day</th>
-                    <th class="half-day-header walk-price">Half Day (3 hrs)</th>
-                    <th class="full-day-header walk-price">Full Day</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <section class="rentals">
-            <h2>Current Best Values</h2>
-            <article class="scoots">
-                <img src="images/couple-driving-scooter-around-town.webp" alt="Couple driving red scooter around town">
-                <h3>Honda Metro Scooter</h3>
-                <p></p>
-            </article>
-            <article class="atv">
-                <img src="images/driving-atv-on-beach.webp" alt="side by side atv driving on the beach at sunset">
-                <h3>Jeep Wrangler - 4 door with a/c</h3>
-                <p></p>
-            </article>
-            <article class="jeep">
-                <img src="images/young-adults-driving-white-jeep-wrangler.webp"
-                    alt="Group of young adults driving in white jeep wrangler near the coast">
-                <h3>Honda Pioneer ATV</h3>
-                <p></p>
-            </article>
-        </section>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p class="thanks">Thank you for contacting Scoots. We will be in contact with your shortly.</p>
     </main>
     <footer>
         <div class="footer-content">
@@ -106,7 +71,6 @@
         </div>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
-    <script src="scripts/prices.js"></script>
 </body>
 
 </html>

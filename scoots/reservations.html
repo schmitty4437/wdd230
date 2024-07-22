@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Scoots Motor Scooter Rentals</title>
+    <meta name="description"
+        content="Get in contact with Scoots to get your questions answered about renting a scooter, ATV, or Jeep on your next visit to Cozumel.">
+    <meta name="author" content="Matthew Schmitt">
+    <meta property="og:title" content="Scoots Scooter Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schmitty4437.github.io/wdd230/scoots/images/scoots-rentals.jpg">
+    <meta property="og:url" content="https://schmitty4437.github.io/wdd230/scoots/">
+    <link rel="icon" href="images/scoots-icon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <button id="menu" title="Mobile menu button"></button>
+        <a href="index.html" class="parent-logo"><img src="images/scoots-logo.webp"
+                alt="Scoots blue and orange scooter logo" class="logo"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html" class="active">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture class="hero-img">
+                <source media="(max-width: 400px)" srcset="images/friends-taking-selfie-in-jeep-400">
+                <source media="(max-width: 1199px)" srcset="images/friends-taking-selfie-in-jeep-1199.webp">
+                <source media="(min-width: 1200px)" srcset="images/friends-taking-selfie-in-jeep-1280.webp">
+                <img src="images/friends-taking-selfie-in-jeep-1280.webp" alt="Group of people enjoying their ATVs from Scoots."
+                    width="1280" height="640">
+            </picture>
+        </div>
+        <div class="reserv-container">
+            <section class="agreement">
+                <h1>Rental Agreement</h1>
+                <p>Please read and accept the following rental agreement before proceeding with your reservation.</p>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+                <div class="reservation-para">
+                    <p>Plan your adventure ahead of time by reserving your motor scooter, ATV, or Jeep with Scoots. Fill
+                        out the form below to secure your vehicle and ensure a hassle-free experience when you arrive in
+                        Cozumel. We look forward to serving you!</p>
+                </div>
+            </section>
+            <section class="reservation">
+                <h1>Reserve Your Ride</h1>
+                <div id="formmessage"></div>
+                <form method="post" action="thankyou.html" class="rform">
+                    <fieldset>
+                        <legend>Reservation Details</legend>
+                        <label for="rental-date">Rental Date*<input type="date" id="rental-date" name="rental-date"
+                                required></label>
+                        <label for="rental-period">Rental Period*<input type="text" id="rental-period"
+                                name="rental-period" placeholder="e.g., 2 days" required></label>
+                        <label for="rental-type">Rental Type*<select id="rental-type" name="rental-type" required>
+                                <option value="atv">ATV</option>
+                                <option value="jeep">Jeep</option>
+                                <option value="scooter">Scooter</option>
+                            </select></label>
+                        <label for="rental-quantity">Number of Rentals*<input type="number" id="rental-quantity"
+                                name="rental-quantity" min="1" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name*<input type="text" id="name" name="name" required></label>
+                        <label for="phone">Phone Number*<input type="tel" id="phone" name="phone"
+                                placeholder="e.g., +52 987 123 4567" required></label>
+                        <label for="email">Email*<input type="email" id="email" name="email"
+                                placeholder="example@gmail.com" title="Please input a valid email address."
+                                required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <label for="home-state">Home State/Country<input type="text" id="home-state"
+                                name="home-state"></label>
+                        <label for="cruise-line">Cruise Line (if applicable)<input type="text" id="cruise-line"
+                                name="cruise-line"></label>
+                        <label for="special-accommodations">Special Accommodations/Comments<textarea
+                                id="special-accommodations" name="special-accommodations" rows="4"></textarea></label>
+                    </fieldset>
+                    <input type="hidden" name="time" id="time">
+                    <input type="submit" value="Reserve Now" class="form-submit">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div id="logo">
+                <a href="index.html"><img src="images/scoots-logo.webp" alt="Scoots blue and orange scooter logo"></a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon-50.webp"
+                        alt="facebook logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon-50.webp"
+                        alt="instagram logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo-50.webp"
+                        alt=" linkedin logo" width="50" height="50"></a>
+            </div>
+            <div id="footer-info">
+                <p>&copy;<span id="currentYear"></span> Scoots Motor Scooter Rentals</p>
+                <p>1234 Adventure Blvd, Cozumel, Quintana Roo, Mexico</p>
+                <p>Phone: +52 987 123 4567</p>
+                <p>Email: <a href="mailto:info@scootscozumel.com">info@scootscozumel.com</a></p>
+            </div>
+        </div>
+        <div class="footer-note">
+            <p>Matthew Schmitt | WDD 230 Final Project | Attribution</p>
+        </div>
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
+</body>
+
+</html>
