@@ -194,12 +194,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 
-.weather-container span,
-.weather-container figcaption,
 .forecast-container figure p {
     margin-top: 5px;
     font-family: var(--paragraph-font);
     font-size: 1em;
+}
+
+#current-temp, #current-humidity {
+    margin: 0;
 }
 
 .weather-container, .forecast-container {
@@ -260,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
 }
 
-.social-container a:hover {
+.social-container a:hover, .social-icon a:hover {
     opacity: .5;
 }
 
@@ -426,7 +428,15 @@ tbody tr:nth-child(odd) {
     background-color: #ceebfc;
 }
 
-
 .rentals p {
     text-align: center;
+}
+
+.link-style a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.link-style a:hover {
+    color: var(--accent1-color);
 }
