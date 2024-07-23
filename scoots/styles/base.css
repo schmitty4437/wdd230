@@ -440,3 +440,11 @@ tbody tr:nth-child(odd) {
 .link-style a:hover {
     color: var(--accent1-color);
 }
+
+#rental-button {
+    margin-top: 60px;
+}
+
+#rental-button .button {
+    padding: 20px 0;
+}
