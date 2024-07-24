@@ -6,3 +6,41 @@
         padding-bottom: 60px;
     }
 }
+
+@media (max-width: 768px) {
+    thead {
+        display: none;
+    }
+
+    tbody, tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 1.5rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 0.5rem;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        flex: 1;
+    }
+
+    td[data-label=""]::before {
+        content: none;
+    }
+
+    td span {
+        flex: 2;
+        text-align: right;
+    }
+}

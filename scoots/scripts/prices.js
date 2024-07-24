@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Fetch the JSON data from the data folder
     fetch('data/prices.json')
         .then(response => response.json())
         .then(data => {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching the JSON data:', error));
 
-    // Function to populate the table
     function populateTable(data) {
         const tableBody = document.querySelector('#rentalTable tbody');
         data.rentalPricing.forEach(item => {
@@ -16,33 +14,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const rentalTypeCell = document.createElement('td');
             rentalTypeCell.textContent = item.rentalType;
+            rentalTypeCell.setAttribute('data-label', 'Rental Type');
             row.appendChild(rentalTypeCell);
 
             const maxPersonsCell = document.createElement('td');
             maxPersonsCell.textContent = item.maxPersons;
+            maxPersonsCell.setAttribute('data-label', 'Max Persons');
             row.appendChild(maxPersonsCell);
 
             const reservationHalfDayCell = document.createElement('td');
             reservationHalfDayCell.textContent = `$${item.reservation.halfDay}`;
+            reservationHalfDayCell.setAttribute('data-label', 'Half Day (Reservation Price)');
             row.appendChild(reservationHalfDayCell);
 
             const reservationFullDayCell = document.createElement('td');
             reservationFullDayCell.textContent = `$${item.reservation.fullDay}`;
+            reservationFullDayCell.setAttribute('data-label', 'Full Day (Reservation Price)');
             row.appendChild(reservationFullDayCell);
 
             const walkInHalfDayCell = document.createElement('td');
             walkInHalfDayCell.textContent = `$${item.walkIn.halfDay}`;
+            walkInHalfDayCell.setAttribute('data-label', 'Half Day (Walk-In Price)');
             row.appendChild(walkInHalfDayCell);
 
             const walkInFullDayCell = document.createElement('td');
             walkInFullDayCell.textContent = `$${item.walkIn.fullDay}`;
+            walkInFullDayCell.setAttribute('data-label', 'Full Day (Walk-In Price)');
             row.appendChild(walkInFullDayCell);
 
             tableBody.appendChild(row);
         });
     }
 
-    // Populate the rental prices for best value section
     function populateRentalPrices(data) {
         const scootersPrice = data.rentalPricing.find(item => item.rentalType === 'Honda Metro Scooter').reservation.fullDay;
         const jeepPrice = data.rentalPricing.find(item => item.rentalType === 'Jeep Wrangler - 4 door with a/c').reservation.fullDay;
