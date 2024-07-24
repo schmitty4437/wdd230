@@ -431,12 +431,11 @@ tbody tr:nth-child(odd) {
 }
 
 .link-style a {
-    text-decoration: none;
-    color: var(--primary-color);
+    color: #000;
 }
 
 .link-style a:hover {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 #rental-button {
